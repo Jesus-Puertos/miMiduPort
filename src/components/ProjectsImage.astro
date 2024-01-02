@@ -6,7 +6,7 @@
   <source srcset={`/images/${Astro.props.imageName}.webp`} type="image/webp" />
   <source srcset={`/images/${Astro.props.imageName}.avif`} type="image/avif" />
   <img
-    class="rounded shadow-2xl shadow-white/10"
+    class="relative z-20 rounded shadow-2xl shadow-white/10"
     loading="lazy"
     src={`/images/${Astro.props.imageName}.jpg`}
     alt="Imagen del proyecto"

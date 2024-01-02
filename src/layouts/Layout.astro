@@ -2,6 +2,7 @@
 import "@fontsource-variable/onest";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import "../styles/stars.css";
 
 interface Props {
   title: string;
@@ -20,7 +21,6 @@ const { description, title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="relative text-black dark:text-white">
     <div
@@ -29,6 +29,9 @@ const { description, title } = Astro.props;
       dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
     >
     </div>
+    <div id="stars" class="relative z-10"></div>
+    <div id="stars2" class="relative z-10"></div>
+    <div id="stars3" class="relative z-10"></div>
     <Header />
     <slot />
     <Footer />
@@ -65,5 +68,4 @@ const { description, title } = Astro.props;
       }
     }
   </style>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </div>
