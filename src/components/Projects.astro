@@ -1,10 +1,14 @@
 ---
 import HTML from "../assets/icons/HTML.astro";
 import CSS from "../assets/icons/CSS.astro";
+import ProjectsImage from "./ProjectsImage.astro";
+import PHP from "../assets/icons/PHP.astro";
+import Sass from "../assets/icons/Sass.astro";
+import JavaScript from "../assets/icons/JavaScript.astro";
 const TAGS = {
   HTML: {
     name: "HTML",
-    class: "bg-black text-white",
+    class: "bg-black border border-white/15 text-white",
     icon: HTML,
   },
   CSS: {
@@ -12,16 +16,32 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: CSS,
   },
+  PHP: {
+    name: "PHP",
+    class: "bg-[#777BB4]/30 text-white",
+    icon: PHP,
+  },
+  SASS: {
+    name: "Sass",
+    class: "bg-[#CD6799]/30 text-white",
+    icon: Sass,
+  },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#F7DF1E] text-black",
+    icon: JavaScript,
+  },
 };
 
 const PROJECTS = [
   {
-    title: "Card",
-    description: "Un proyecto que hice de la plataforma FrontMentor",
+    title: "Proyecto de complementarias -TECNM Campus Zongolica",
+    description:
+      "Estoy Desarrollando una plataforma para el registro de actividades complementarias de los estudiantes del Tecnológico Nacional de México Campus Zongolica.",
     link: "#",
     github: "#",
-    image: "/images/practica-1.png",
-    tags: [TAGS.HTML, TAGS.CSS],
+    image: ProjectsImage,
+    tags: [TAGS.PHP, TAGS.SASS, TAGS.JAVASCRIPT, TAGS.HTML],
   },
 ];
 ---
@@ -43,11 +63,7 @@ const PROJECTS = [
           </li>
         ))}
       </ul>
-      <img
-        class="rounded shadow-2xl shadow-white/10 "
-        src={image}
-        alt={`Captura de pantalla del proyecto ${image}`}
-      />
+      <ProjectsImage imageName="TECNMComplementarias" />
     </article>
   ))
 }

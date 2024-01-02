@@ -28,11 +28,10 @@ import WordpressIcon from "../assets/icons/Wordpress.astro";
   title="Portfolio de Jesus-Puertos - Desarrollador Web y Programador Web"
   description="Contratame o ve mis proyectos"
 >
-  <main>
+  <main class="px-4">
     <SectionContainer class="py-44 pb-22">
       <img
-        class="rounded-full
-  size-12 mb-4"
+        class="rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 size-16"
         src="https://imgs.search.brave.com/lJ0VZS-ge2ntzv6ieysqC5qhKHOcqw0ezwiL0YmtZ2s/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzIyLzIw/LzM4LzIyMjAzODUx/ZTQ1NGMxNjBmNjI3/YjZiNzhjOTM3YjNk/LmpwZw"
         alt="JesusPuertos Avatar"
       />
@@ -53,44 +52,56 @@ import WordpressIcon from "../assets/icons/Wordpress.astro";
         class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white"
       >
         <span>1 año de experiencia.</span>
-        <span class="text-yellow-200/90"> Desarrollador Web.</span>
-        <span class="text-red-200/90"> De Tlilapan, Veracruz.</span>
-        <span class="text-yellow-200/90"
+        <span class="text-yellow-800 dark:text-yellow-200">
+          Desarrollador Web.</span
+        >
+        <span class="text-red-800 dark:text-red-200">
+          De Tlilapan, Veracruz.</span
+        >
+        <span class="text-yellow-800 dark:text-yellow-200"
           >Experiencia en lenguajes de programación como JavaScript, PHP, y
           Python.
-        </span><span class="text-blue-200/90"
+        </span><span class="text-sky-800 dark:text-sky-200"
           >Manejo de arquitectura CSS BEM.</span
         >
-        <span class="text-red-200/90"
+        <span class="text-red-800 dark:text-red-200"
           >Estoy comprometido con el aprendizaje continuo y la aplicación de mis
           conocimientos en proyectos prácticos.</span
         >
 
-        <span class="opacity-70">Me especializo en el lado del frontend</span>
+        <span class="text-sky-800 dark:text-sky-200"
+          >Me especializo en el lado del frontend</span
+        >
       </h2>
 
-      <nav class="flex gap-x-4 mt-8">
+      <nav class="flex gap-x-4 mt-8 flex-wrap">
         <SocialPill href="https://www.linkedin.com/in/jes%C3%BAs-puertos-mx/">
-          <TrabajoIcon class="size-6" /> LinkedIn
+          <TrabajoIcon class="size-4 md:size-6" /> LinkedIn
         </SocialPill>
         <SocialPill href="https://github.com/Jesus-Puertos">
-          <GithubIcon class="size-6" /> Github
+          <GithubIcon class="size-4 md:size-6" /> Github
         </SocialPill>
         <SocialPill href="https://github.com/Jesus-Puertos">
-          <MailIcon class="size-6" /> 226w0496@zongolica.tecnm.mx
+          <MailIcon class="size-4 md:size-6" /> 226w0496@zongolica.tecnm.mx
         </SocialPill>
       </nav>
 
       <div class="flex flex-wrap gap-y-4 gap-x-4 mt-8">
-        <Tecnologies><HTMLIcon class="size-6" /> HTML</Tecnologies>
-        <Tecnologies><CSSIcon class="size-6" /> CSS</Tecnologies>
-        <Tecnologies><JavaScriptIcon class="size-6" /> JavaScript</Tecnologies>
-        <Tecnologies><PHPIcon class="size-6" /> PHP</Tecnologies>
-        <Tecnologies><ReactIcon class="size-6" /> React</Tecnologies>
-        <Tecnologies><TailwindIcon class="size-6" /> Tailwind CSS</Tecnologies>
-        <Tecnologies><SassIcon class="size-6" /> Sass</Tecnologies>
-        <Tecnologies><GitIcon class="size-6" /> Git</Tecnologies>
-        <Tecnologies><WordpressIcon class="size-6" /> Wordpress</Tecnologies>
+        <Tecnologies><HTMLIcon class="size-4 md:size-6" /> HTML</Tecnologies>
+        <Tecnologies><CSSIcon class="size-4 md:size-6" /> CSS</Tecnologies>
+        <Tecnologies>
+          <JavaScriptIcon class="size-4 md:size-6" /> JavaScript
+        </Tecnologies>
+        <Tecnologies><PHPIcon class="size-4 md:size-6" /> PHP</Tecnologies>
+        <Tecnologies><ReactIcon class="size-4 md:size-6" /> React</Tecnologies>
+        <Tecnologies>
+          <TailwindIcon class="size-4 md:size-6" /> Tailwind CSS
+        </Tecnologies>
+        <Tecnologies><SassIcon class="size-4 md:size-6" /> Sass</Tecnologies>
+        <Tecnologies><GitIcon class="size-4 md:size-6" /> Git</Tecnologies>
+        <Tecnologies>
+          <WordpressIcon class="size-4 md:size-6" /> Wordpress
+        </Tecnologies>
       </div>
     </SectionContainer>
 
@@ -122,6 +133,122 @@ import WordpressIcon from "../assets/icons/Wordpress.astro";
          Portfolio
       </h2>
       <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="contacto">
+      <!--
+  Heads up! 👋
+
+  Plugins:
+    - @tailwindcss/forms
+-->
+
+      <div class="w-full mx-auto lg:w-[740px] mt-40 mb-5">
+        <div class="mx-auto max-w-lg text-center">
+          <h1 class="text-2xl font-bold sm:text-3xl">
+            Empezemos a Trabajar Hoy!
+          </h1>
+
+          <p class="mt-4 text-gray-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero
+            nulla eaque error neque ipsa culpa autem, at itaque nostrum!
+          </p>
+        </div>
+
+        <form
+          action="https://formsubmit.co/226w0496@zongolica.tecnm.mx"
+          method="POST"
+          class="mx-auto mb-0 mt-8 max-w-md space-y-4"
+        >
+          <input type="hidden" name="_template" value="table" />
+          <div>
+            <label for="name" class="sr-only">Nombre</label>
+
+            <div class="relative">
+              <input
+                name="name"
+                id="name"
+                type="text"
+                class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                placeholder="Ingresa tu nombre"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="email" class="sr-only">Email</label>
+
+            <div class="relative">
+              <input
+                type="email"
+                name="email"
+                class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                placeholder="Enter email"
+              />
+
+              <span
+                class="absolute inset-y-0 end-0 grid place-content-center px-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <div>
+            <label for="message" class="sr-only">Mensaje</label>
+
+            <div class="relative">
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="5"
+                class="w-full
+                rounded-lg
+                border-gray-200
+                p-4
+                pe-12
+                text-sm
+                shadow-sm resize-none"
+                placeholder="Tu mensaje"></textarea>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between text-balance">
+            <p class="text-sm text-gray-500">
+              ¿No quieres enviarme correo?
+              <a
+                class="underline"
+                href="https://www.linkedin.com/in/jes%C3%BAs-puertos-mx/"
+              >
+                Checa mi LinkedIn</a
+              >
+            </p>
+
+            <button
+              type="submit"
+              class="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
+            >
+              Enviar
+            </button>
+            <input type="hidden" name="_next" value="http://localhost:4321/" />
+            <input type="hidden" name="_captcha" value="false" />
+          </div>
+        </form>
+      </div>
     </SectionContainer>
   </main>
 </Layout>
