@@ -1,0 +1,127 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import SocialPill from "../components/SocialPill.astro";
+import TrabajoIcon from "../components/icons/Trabajo.astro";
+import GithubIcon from "../components/icons/Github.astro";
+import MailIcon from "../components/icons/Mail.astro";
+import Timeline from "../components/Timeline.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import BriefCaseIcon from "../components/icons/BriefCase.astro";
+import PortfolioIcon from "../components/icons/Portfolio.astro";
+import Projects from "../components/Projects.astro";
+import Educacion from "../components/Educacion.astro";
+import Education from "../components/icons/Education.astro";
+import Tecnologies from "../components/Tecnologies.astro";
+import CSSIcon from "../assets/icons/CSS.astro";
+import HTMLIcon from "../assets/icons/HTML.astro";
+import PHPIcon from "../assets/icons/PHP.astro";
+import JavaScriptIcon from "../assets/icons/JavaScript.astro";
+import ReactIcon from "../assets/icons/React.astro";
+import TailwindIcon from "../assets/icons/Tailwind.astro";
+import SassIcon from "../assets/icons/Sass.astro";
+import GitIcon from "../assets/icons/Git.astro";
+import WordpressIcon from "../assets/icons/Wordpress.astro";
+---
+
+<Layout
+  title="Portfolio de Jesus-Puertos - Desarrollador Web y Programador Web"
+  description="Contratame o ve mis proyectos"
+>
+  <main>
+    <SectionContainer class="py-44 pb-22">
+      <img
+        class="rounded-full
+  size-12 mb-4"
+        src="https://imgs.search.brave.com/lJ0VZS-ge2ntzv6ieysqC5qhKHOcqw0ezwiL0YmtZ2s/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzIyLzIw/LzM4LzIyMjAzODUx/ZTQ1NGMxNjBmNjI3/YjZiNzhjOTM3YjNk/LmpwZw"
+        alt="JesusPuertos Avatar"
+      />
+      <h1
+        class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
+        Hola soy Jesus Puertos
+        <a
+          href="https://www.linkedin.com/in/jes%C3%BAs-puertos-mx/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex justify-center items-center"
+        >
+          <Badge>Desarrollador FullStack</Badge>
+        </a>
+      </h1>
+      <h2
+        class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white"
+      >
+        <span>1 año de experiencia.</span>
+        <span class="text-yellow-200/90"> Desarrollador Web.</span>
+        <span class="text-red-200/90"> De Tlilapan, Veracruz.</span>
+        <span class="text-yellow-200/90"
+          >Experiencia en lenguajes de programación como JavaScript, PHP, y
+          Python.
+        </span><span class="text-blue-200/90"
+          >Manejo de arquitectura CSS BEM.</span
+        >
+        <span class="text-red-200/90"
+          >Estoy comprometido con el aprendizaje continuo y la aplicación de mis
+          conocimientos en proyectos prácticos.</span
+        >
+
+        <span class="opacity-70">Me especializo en el lado del frontend</span>
+      </h2>
+
+      <nav class="flex gap-x-4 mt-8">
+        <SocialPill href="https://www.linkedin.com/in/jes%C3%BAs-puertos-mx/">
+          <TrabajoIcon class="size-6" /> LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/Jesus-Puertos">
+          <GithubIcon class="size-6" /> Github
+        </SocialPill>
+        <SocialPill href="https://github.com/Jesus-Puertos">
+          <MailIcon class="size-6" /> 226w0496@zongolica.tecnm.mx
+        </SocialPill>
+      </nav>
+
+      <div class="flex flex-wrap gap-y-4 gap-x-4 mt-8">
+        <Tecnologies><HTMLIcon class="size-6" /> HTML</Tecnologies>
+        <Tecnologies><CSSIcon class="size-6" /> CSS</Tecnologies>
+        <Tecnologies><JavaScriptIcon class="size-6" /> JavaScript</Tecnologies>
+        <Tecnologies><PHPIcon class="size-6" /> PHP</Tecnologies>
+        <Tecnologies><ReactIcon class="size-6" /> React</Tecnologies>
+        <Tecnologies><TailwindIcon class="size-6" /> Tailwind CSS</Tecnologies>
+        <Tecnologies><SassIcon class="size-6" /> Sass</Tecnologies>
+        <Tecnologies><GitIcon class="size-6" /> Git</Tecnologies>
+        <Tecnologies><WordpressIcon class="size-6" /> Wordpress</Tecnologies>
+      </div>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <Education class="size-8 mr-4" />
+         Educación:
+      </h2>
+      <Educacion />
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <BriefCaseIcon class="size-8 mr-4" />
+         Experiencia:
+      </h2>
+      <Timeline />
+    </SectionContainer>
+
+    <SectionContainer id="portfolio">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <PortfolioIcon class="size-8 mr-4" />
+         Portfolio
+      </h2>
+      <Projects />
+    </SectionContainer>
+  </main>
+</Layout>

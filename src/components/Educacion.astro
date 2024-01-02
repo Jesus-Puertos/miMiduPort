@@ -1,0 +1,33 @@
+---
+import EducacionItem from "./EducacionItem.astro";
+const EDUCACION = [
+  {
+    date: "Actualmente...",
+    title: "Udemy",
+    description:
+      "Actualmente, estoy en constante formación en Udemy, donde tomo cursos para seguir aprendiendo y desarrollándome como desarrollador..",
+  },
+  {
+    date: "Actualmente...",
+    title: "TECNM Campus Zongolica",
+    description:
+      "En este periodo, estoy cursando la carrera de Ingeniería en Sistemas Computacionales en el TECNM Campus Zongolica. Durante mi tiempo aquí, he trabajado en diversos proyectos de programación y desarrollo web.",
+  },
+  {
+    date: "2019-2022",
+    title: "Centro Bachillerato Tecnologico Agropecuario No. 280",
+    description:
+      "Durante mi estancia en el Centro Bachillerato Tecnológico Agropecuario, adquirí conocimientos técnicos en ofimática y mantenimiento de hardware.",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EDUCACION.map((educacion) => (
+      <li class="mb-10 ms-4">
+        <EducacionItem {...educacion} />
+      </li>
+    ))
+  }
+</ol>
