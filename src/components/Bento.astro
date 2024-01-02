@@ -1,0 +1,95 @@
+---
+import BentoItem from "./BentoItem.astro";
+---
+
+<section
+  class={`
+    w-full max-w-[1400px]
+    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+    mx-auto p-6 md:p-12 lg:p-20
+  `}
+>
+  <BentoItem
+    class="col-span-10 md:col-span-4"
+    title="Cadem"
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  >
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-black-950
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/images/IngeTec.webp')"
+    >
+    </div>
+
+    <p slot="content" class="max-w-xl text-base md:text-lg">
+      Lorem ipsum dolor sit amet, consectetur ad ipiscing elit. Nulla facilisi.
+      Donec euismod, quam eget maximus ultrices, nunc sapien aliquet nunc, sed
+      luctus magna nisl sed nunc.
+    </p>
+  </BentoItem>
+
+  <BentoItem
+    class="col-span-10 md:col-span-6"
+    title="IngeTec"
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  >
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+-z-10 h-full w-full bg-black-950
+bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/images/IngeTec.webp')"
+    >
+    </div>
+
+    <p slot="content" class="max-w-xl text-base md:text-lg">
+      Lorem ipsum dolor sit amet, consectetur ad ipiscing elit. Nulla facilisi.
+      Donec euismod, quam eget maximus ultrices, nunc sapien aliquet nunc, sed
+      luctus magna nisl sed nunc.
+    </p>
+  </BentoItem>
+
+  <BentoItem
+    class="col-span-10 md:col-span-6"
+    title="Gatito Millonario"
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  >
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+-z-10 h-full w-full bg-black-950
+bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/images/IngeTec.webp')"
+    >
+    </div>
+
+    <p slot="content" class="max-w-xl text-base md:text-lg">
+      Lorem ipsum dolor sit amet, consectetur ad ipiscing elit. Nulla facilisi.
+      Donec euismod, quam eget maximus ultrices, nunc sapien aliquet nunc, sed
+      luctus magna nisl sed nunc.
+    </p>
+  </BentoItem>
+
+  <BentoItem
+    class="col-span-10 md:col-span-4"
+    title="Blog de Café"
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  >
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+-z-10 h-full w-full bg-black-950
+bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/images/IngeTec.webp')"
+    >
+    </div>
+
+    <p slot="content" class="max-w-xl text-base md:text-lg">
+      Lorem ipsum dolor sit amet, consectetur ad ipiscing elit. Nulla facilisi.
+      Donec euismod, quam eget maximus ultrices, nunc sapien aliquet nunc, sed
+      luctus magna nisl sed nunc.
+    </p>
+  </BentoItem>
+</section>
