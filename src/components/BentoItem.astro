@@ -14,15 +14,15 @@ const { title, subtitle } = Astro.props;
   col-span-5
   relative rounded-xl
   backdrop-blur-md
-  border border-black/10
-  shadow-inner shadow-white/10
+  border border-white/10
+  shadow-inner shadow-black/10
   overflow-hidden
   group
 `}
 >
   <div
     class="absolute bottom-0 top-0 z-10 h-full w-full
-    bg-gradient-to-b from-transparent from-40% via-[#151836]/50 to-[#151836]/80"
+    bg-gradient-to-b from-transparent from-40% via-[#000]/50 to-[#000]/80"
   >
   </div>
 
@@ -31,7 +31,9 @@ const { title, subtitle } = Astro.props;
   <div
     class="relative z-20 flex h-full select-none flex-col justify-end gap-1 p-2 text-lg md:p-6"
   >
-    <h2 class="mb-4 text-balance text-3xl font-semibold uppercase text-white">
+    <h2
+      class="mb-4 text-balance text-3xl font-semibold uppercase text-yellow-200/80"
+    >
       {title}
     </h2>
 

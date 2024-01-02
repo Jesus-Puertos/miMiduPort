@@ -4,7 +4,7 @@ import BentoItem from "./BentoItem.astro";
 
 <section
   class={`
-    w-full max-w-[1400px]
+    w-full max-w-[1400px] mt-8
     grid lg:grid-cols-10 auto-rows-[30rem] gap-4
     mx-auto p-6 md:p-12 lg:p-20
   `}
@@ -12,28 +12,26 @@ import BentoItem from "./BentoItem.astro";
   <BentoItem
     class="col-span-10 md:col-span-4"
     title="Cadem"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    subtitle="Junio 2022"
   >
     <div
       slot="image"
       class="transition-scale absolute bottom-0 left-0 top-0
     -z-10 h-full w-full bg-black-950
     bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-      style="background-image: url('/images/IngeTec.webp')"
+      style="background-image: url('/images/proyecto-wix-cadem.webp')"
     >
     </div>
 
     <p slot="content" class="max-w-xl text-base md:text-lg">
-      Lorem ipsum dolor sit amet, consectetur ad ipiscing elit. Nulla facilisi.
-      Donec euismod, quam eget maximus ultrices, nunc sapien aliquet nunc, sed
-      luctus magna nisl sed nunc.
+      Sitio web hecho con Wix.
     </p>
   </BentoItem>
 
   <BentoItem
     class="col-span-10 md:col-span-6"
     title="IngeTec"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    subtitle="Septiembre 2023."
   >
     <div
       slot="image"
@@ -45,51 +43,47 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
     </div>
 
     <p slot="content" class="max-w-xl text-base md:text-lg">
-      Lorem ipsum dolor sit amet, consectetur ad ipiscing elit. Nulla facilisi.
-      Donec euismod, quam eget maximus ultrices, nunc sapien aliquet nunc, sed
-      luctus magna nisl sed nunc.
+      Sitio web estatico para el cuerpo academico INGETEC del TECNM Campus
+      Zongolica.
     </p>
   </BentoItem>
 
   <BentoItem
     class="col-span-10 md:col-span-6"
-    title="Gatito Millonario"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    title="Blog de café"
+    subtitle="Marzo 2023"
   >
     <div
       slot="image"
       class="transition-scale absolute bottom-0 left-0 top-0
 -z-10 h-full w-full bg-black-950
 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-      style="background-image: url('/images/IngeTec.webp')"
+      style="background-image: url('/images/blog-de-cafe-udemy.webp')"
     >
     </div>
 
     <p slot="content" class="max-w-xl text-base md:text-lg">
-      Lorem ipsum dolor sit amet, consectetur ad ipiscing elit. Nulla facilisi.
-      Donec euismod, quam eget maximus ultrices, nunc sapien aliquet nunc, sed
-      luctus magna nisl sed nunc.
+      Landing page de un blog de café.
     </p>
   </BentoItem>
 
   <BentoItem
     class="col-span-10 md:col-span-4"
-    title="Blog de Café"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    title="Gatito Millonario"
+    subtitle="Marzo 2023"
   >
     <div
       slot="image"
       class="transition-scale absolute bottom-0 left-0 top-0
 -z-10 h-full w-full bg-black-950
-bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-      style="background-image: url('/images/IngeTec.webp')"
+bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-105"
+      style="background-image: url('/images/gatito-millonario.webp')"
     >
     </div>
 
     <p slot="content" class="max-w-xl text-base md:text-lg">
-      Lorem ipsum dolor sit amet, consectetur ad ipiscing elit. Nulla facilisi.
-      Donec euismod, quam eget maximus ultrices, nunc sapien aliquet nunc, sed
-      luctus magna nisl sed nunc.
+      Juego para el sitio de cultura tributaria desarrollado con JavaScript y
+      Canvas.
     </p>
   </BentoItem>
 </section>
