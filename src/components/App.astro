@@ -30,7 +30,7 @@ const i18n = getI18N({ currentLocale });
 ---
 
 <Layout title={i18n.SEO_TITLE} description={i18n.SEO_DESCRIPTION}>
-  <main class="px-4">
+  <main class="px-4 z-20">
     <SectionContainer class="py-32 pb-22" id="sobre">
       <img
         class="rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 size-[100px] mb-5"
@@ -38,7 +38,7 @@ const i18n = getI18N({ currentLocale });
         alt="JesusPuertos Avatar"
       />
       <h1
-        class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+        class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row md:gap-x-2 pb-6 lg:pb-10"
       >
         {i18n.INTRO_TITLE}
         <div class="flex justify-center items-center">
@@ -53,19 +53,24 @@ const i18n = getI18N({ currentLocale });
           {i18n["Desarrollador Web"]}</span
         >
         <span class="text-red-800 dark:text-red-200"
-          >Experiencia en lenguajes de programación como JavaScript y PHP.
+          >{
+            i18n[
+              "Experiencia en lenguajes de programación como JavaScript y PHP."
+            ]
+          }
         </span><span class="text-sky-800 dark:text-sky-200"
-          >Manejo de arquitectura CSS BEM.</span
+          >{i18n["Manejo de arquitectura CSS BEM."]}</span
         >
       </h2>
       <h2
         class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white mt-2"
       >
         <span class="text-black/80 dark:text-white/90"
-          >Estoy comprometido con el aprendizaje continuo y la aplicación de mis
-          conocimientos en
+          >{i18n.INTRO_SUBTILE2}
         </span>
-        <span class="text-sky-800 dark:text-sky-200">proyectos prácticos.</span>
+        <span class="text-sky-800 dark:text-sky-200"
+          >{i18n["proyectos prácticos"]}</span
+        >
       </h2>
 
       <nav class="flex gap-x-4 gap-y-2 mt-8 flex-wrap">
