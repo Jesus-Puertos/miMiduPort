@@ -30,9 +30,9 @@ import Bento from "../components/Bento.astro";
   description="Contratame o ve mis proyectos"
 >
   <main class="px-4">
-    <SectionContainer class="py-32 pb-22">
+    <SectionContainer class="py-32 pb-22" id="sobre">
       <img
-        class="rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 size-16"
+        class="rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 size-[100px] mb-5"
         src="https://imgs.search.brave.com/lJ0VZS-ge2ntzv6ieysqC5qhKHOcqw0ezwiL0YmtZ2s/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzIyLzIw/LzM4LzIyMjAzODUx/ZTQ1NGMxNjBmNjI3/YjZiNzhjOTM3YjNk/LmpwZw"
         alt="JesusPuertos Avatar"
       />
@@ -40,14 +40,9 @@ import Bento from "../components/Bento.astro";
         class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
       >
         Hola soy Jesus Puertos
-        <a
-          href="https://www.linkedin.com/in/jes%C3%BAs-puertos-mx/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="flex justify-center items-center"
-        >
-          <Badge>Desarrollador FullStack</Badge>
-        </a>
+        <div class="flex justify-center items-center">
+          <Badge>Desarrollador FullStack Jr.</Badge>
+        </div>
       </h1>
       <h2
         class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white"
@@ -56,22 +51,20 @@ import Bento from "../components/Bento.astro";
         <span class="text-yellow-800 dark:text-yellow-200">
           Desarrollador Web.</span
         >
-        <span class="text-red-800 dark:text-red-200">
-          De Tlilapan, Veracruz.</span
-        >
-        <span class="text-yellow-800 dark:text-yellow-200"
+        <span class="text-red-800 dark:text-red-200"
           >Experiencia en lenguajes de programación como JavaScript y PHP.
         </span><span class="text-sky-800 dark:text-sky-200"
           >Manejo de arquitectura CSS BEM.</span
         >
+      </h2>
+      <h2
+        class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white mt-2"
+      >
         <span class="text-black/80 dark:text-white/90"
           >Estoy comprometido con el aprendizaje continuo y la aplicación de mis
-          conocimientos en proyectos prácticos.</span
-        >
-
-        <span class="text-sky-800 dark:text-sky-200"
-          >Me especializo en el lado del frontend</span
-        >
+          conocimientos en
+        </span>
+        <span class="text-sky-800 dark:text-sky-200">proyectos prácticos.</span>
       </h2>
 
       <nav class="flex gap-x-4 gap-y-2 mt-8 flex-wrap">
@@ -105,7 +98,7 @@ import Bento from "../components/Bento.astro";
       </div>
     </SectionContainer>
 
-    <SectionContainer id="experiencia">
+    <SectionContainer id="experiencia" data-section="experiencia">
       <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
@@ -115,7 +108,7 @@ import Bento from "../components/Bento.astro";
       <Educacion />
     </SectionContainer>
 
-    <SectionContainer id="experiencia">
+    <SectionContainer>
       <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
@@ -125,7 +118,11 @@ import Bento from "../components/Bento.astro";
       <Timeline />
     </SectionContainer>
 
-    <SectionContainer id="portfolio">
+    <SectionContainer
+      class="py-24 pb-0"
+      id="portfolio"
+      data-section="portfolio"
+    >
       <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
@@ -135,23 +132,15 @@ import Bento from "../components/Bento.astro";
       <Projects />
     </SectionContainer>
     <Bento />
-    <SectionContainer id="contacto">
-      <!--
-  Heads up! 👋
-
-  Plugins:
-    - @tailwindcss/forms
--->
-
-      <div class="w-full mx-auto lg:w-[740px] mt-40 mb-5">
+    <SectionContainer id="contacto" data-section="contacto">
+      <div class="w-full mx-auto lg:w-[740px] mt-5 mb-5">
         <div class="mx-auto max-w-lg text-center">
           <h1 class="text-2xl font-bold sm:text-3xl">
             Empezemos a Trabajar Hoy!
           </h1>
 
           <p class="mt-4 text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero
-            nulla eaque error neque ipsa culpa autem, at itaque nostrum!
+            Enviame un mensaje y te contestare lo mas pronto posible.
           </p>
         </div>
 
