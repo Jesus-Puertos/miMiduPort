@@ -1,4 +1,7 @@
 ---
+import HTMLIcon from "../assets/icons/HTML.astro";
+import CSSIcon from "../assets/icons/CSS.astro";
+import JavaScriptIcon from "../assets/icons/JavaScript.astro";
 import BentoItem from "./BentoItem.astro";
 ---
 
@@ -25,7 +28,12 @@ import BentoItem from "./BentoItem.astro";
 
     <p slot="content" class="max-w-xl text-base md:text-lg">
       Sitio web hecho con Wix.
+      <!-- Tecnologias -->
     </p>
+    <div slot="tecnologies" class="flex gap-x-2 justify-start items-center">
+      <CSSIcon class="size-6" />
+      <JavaScriptIcon class="size-6" />
+    </div>
   </BentoItem>
 
   <BentoItem
@@ -46,6 +54,12 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       Sitio web estatico para el cuerpo academico INGETEC del TECNM Campus
       Zongolica.
     </p>
+
+    <div slot="tecnologies" class="flex gap-x-2 justify-start items-center">
+      <HTMLIcon class="size-8" />
+      <CSSIcon class="size-6" />
+      <JavaScriptIcon class="size-6" />
+    </div>
   </BentoItem>
 
   <BentoItem
