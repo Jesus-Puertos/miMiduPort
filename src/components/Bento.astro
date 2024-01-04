@@ -3,6 +3,8 @@ import HTMLIcon from "../assets/icons/HTML.astro";
 import CSSIcon from "../assets/icons/CSS.astro";
 import JavaScriptIcon from "../assets/icons/JavaScript.astro";
 import BentoItem from "./BentoItem.astro";
+import GithubIcon from "./icons/Github.astro";
+import BoxArrowIcon from "./icons/BoxArrow.astro";
 ---
 
 <section
@@ -34,6 +36,20 @@ import BentoItem from "./BentoItem.astro";
       <CSSIcon class="size-6" />
       <JavaScriptIcon class="size-6" />
     </div>
+    <div slot="links" class="flex justify-end items-center">
+      <span
+        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
+      >
+        <a
+          href="https://excreplex.wixsite.com/cadem"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <BoxArrowIcon class="size-5" />
+        </a>
+      </span>
+    </div>
   </BentoItem>
 
   <BentoItem
@@ -60,12 +76,35 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       <CSSIcon class="size-6" />
       <JavaScriptIcon class="size-6" />
     </div>
+    <div slot="links" class="flex justify-end items-center">
+      <span
+        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
+      >
+        <a
+          href="https://ingetec-jesus-puertos.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <BoxArrowIcon class="size-5" />
+        </a>
+
+        <a
+          href="https://github.com/Jesus-Puertos/Cuerpo-academico-ingetec"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <GithubIcon class="size-5" />
+        </a>
+      </span>
+    </div>
   </BentoItem>
 
   <BentoItem
     class="col-span-10 md:col-span-6"
     title="Blog de café"
-    subtitle="Marzo 2023"
+    subtitle="Agosto 2023"
   >
     <div
       slot="image"
@@ -79,6 +118,34 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
     <p slot="content" class="max-w-xl text-base md:text-lg">
       Landing page de un blog de café.
     </p>
+    <div slot="tecnologies" class="flex gap-x-2 justify-start items-center">
+      <HTMLIcon class="size-8" />
+      <CSSIcon class="size-6" />
+      <JavaScriptIcon class="size-6" />
+    </div>
+    <div slot="links" class="flex justify-end items-center">
+      <span
+        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
+      >
+        <a
+          href="https://www.gob.mx/hacienda"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <BoxArrowIcon class="size-5" />
+        </a>
+
+        <a
+          href="https://www.gob.mx/hacienda"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <GithubIcon class="size-5" />
+        </a>
+      </span>
+    </div>
   </BentoItem>
 
   <BentoItem
@@ -99,5 +166,33 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       Juego para el sitio de cultura tributaria desarrollado con JavaScript y
       Canvas.
     </p>
+    <div slot="tecnologies" class="flex gap-x-2 justify-start items-center">
+      <HTMLIcon class="size-8" />
+      <CSSIcon class="size-6" />
+      <JavaScriptIcon class="size-6" />
+    </div>
+    <div slot="links" class="flex justify-end items-center">
+      <span
+        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
+      >
+        <a
+          href="https://www.gob.mx/hacienda"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <BoxArrowIcon class="size-5" />
+        </a>
+
+        <a
+          href="https://www.gob.mx/hacienda"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <GithubIcon class="size-5" />
+        </a>
+      </span>
+    </div>
   </BentoItem>
 </section>
