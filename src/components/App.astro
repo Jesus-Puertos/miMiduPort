@@ -22,6 +22,7 @@ import TailwindIcon from "../assets/icons/Tailwind.astro";
 import SassIcon from "../assets/icons/Sass.astro";
 import GitIcon from "../assets/icons/Git.astro";
 import WordpressIcon from "../assets/icons/Wordpress.astro";
+import MySQLIcon from "../assets/icons/MySQL.astro";
 import Bento from "../components/Bento.astro";
 
 import { getI18N } from "../i18n/";
@@ -100,6 +101,10 @@ const i18n = getI18N({ currentLocale });
         <Tecnologies><GitIcon class="size-4 md:size-6" /> Git</Tecnologies>
         <Tecnologies>
           <WordpressIcon class="size-4 md:size-6" /> Wordpress
+        </Tecnologies>
+
+        <Tecnologies>
+          <MySQLIcon class="size-4 md:size-6" /> MySQL
         </Tecnologies>
       </div>
     </SectionContainer>

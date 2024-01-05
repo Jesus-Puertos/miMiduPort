@@ -5,10 +5,11 @@ import ProjectsImage from "./ProjectsImage.astro";
 import PHP from "../assets/icons/PHP.astro";
 import Sass from "../assets/icons/Sass.astro";
 import JavaScript from "../assets/icons/JavaScript.astro";
+import MySQL from "../assets/icons/MySQL.astro";
 const TAGS = {
   HTML: {
     name: "HTML",
-    class: "bg-black border border-white/15 text-white",
+    class: "bg-[#E34F26]/70 text-white",
     icon: HTML,
   },
   CSS: {
@@ -31,17 +32,29 @@ const TAGS = {
     class: "bg-[#F7DF1E] text-black",
     icon: JavaScript,
   },
+  MYSQL: {
+    name: "MySQL",
+    class: "bg-[#4479A1] text-white",
+    icon: MySQL,
+  },
 };
 
 const PROJECTS = [
   {
-    title: "Proyecto de complementarias -TECNM Campus Zongolica",
+    title: "Proyecto FullStack Complementarias -TECNM Campus Zongolica",
     description:
       "Estoy Desarrollando una plataforma para el registro de actividades complementarias de los estudiantes del Tecnológico Nacional de México Campus Zongolica.",
     link: "#",
     github: "#",
     image: ProjectsImage,
-    tags: [TAGS.PHP, TAGS.SASS, TAGS.JAVASCRIPT, TAGS.HTML],
+    tags: [
+      TAGS.PHP,
+      TAGS.SASS,
+      TAGS.JAVASCRIPT,
+      TAGS.HTML,
+      TAGS.CSS,
+      TAGS.MYSQL,
+    ],
   },
 ];
 ---
@@ -49,7 +62,9 @@ const PROJECTS = [
 {
   PROJECTS.map(({ image, title, description, tags }) => (
     <article>
-      <h3 class="2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+      <h3 class="text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2">
+        {title}
+      </h3>
       <p class="text-lg mb-4 text-pretty">{description}</p>
       <ul class="flex gap-x-2 flex-row mb-2">
         {tags.map((tag) => (
