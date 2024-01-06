@@ -5,6 +5,10 @@ import JavaScriptIcon from "../assets/icons/JavaScript.astro";
 import BentoItem from "./BentoItem.astro";
 import GithubIcon from "./icons/Github.astro";
 import BoxArrowIcon from "./icons/BoxArrow.astro";
+import ReactIcon from "../assets/icons/React.astro";
+import TailwindIcon from "../assets/icons/Tailwind.astro";
+import SpringIcon from "../assets/icons/Spring.astro";
+import MySQLIcon from "../assets/icons/MySQL.astro";
 ---
 
 <section
@@ -24,7 +28,7 @@ import BoxArrowIcon from "./icons/BoxArrow.astro";
       class="transition-scale absolute bottom-0 left-0 top-0
     -z-10 h-full w-full bg-black-950
     bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-      style="background-image: url('/images/proyecto-wix-cadem.avif')"
+      style="background-image: url('/images/proyecto-wix-cadem.webp')"
     >
     </div>
 
@@ -59,7 +63,7 @@ import BoxArrowIcon from "./icons/BoxArrow.astro";
       class="transition-scale absolute bottom-0 left-0 top-0
 -z-10 h-full w-full bg-black-950
 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-      style="background-image: url('/images/IngeTec.avif')"
+      style="background-image: url('/images/IngeTec.webp')"
     >
     </div>
 
@@ -108,7 +112,7 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       class="transition-scale absolute bottom-0 left-0 top-0
 -z-10 h-full w-full bg-black-950
 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-      style="background-image: url('/images/blog-de-cafe-udemy.avif')"
+      style="background-image: url('/images/blog-de-cafe-udemy.webp')"
     >
     </div>
 
@@ -155,7 +159,7 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       class="transition-scale absolute bottom-0 left-0 top-0
 -z-10 h-full w-full bg-black-950
 bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-105"
-      style="background-image: url('/images/gatito-millonario.avif')"
+      style="background-image: url('/images/gatito-millonario.webp')"
     >
     </div>
 
@@ -183,6 +187,47 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
 
         <a
           href="https://www.gob.mx/hacienda"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <GithubIcon class="size-5" />
+        </a>
+      </span>
+    </div>
+  </BentoItem>
+
+  <BentoItem
+    class="col-span-10 md:col-span-6"
+    title="Sistema de recursos humanos"
+    subtitle="Enero 2024"
+  >
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+-z-10 h-full w-full bg-black-950
+bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-105"
+      style="background-image: linear-gradient(to right, rgb(0 0 0 /0.4),rgb(0 0 0 / 0)),url('/images/recursos-humanos-proyecto.webp')"
+    >
+    </div>
+
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      Aplicación FullStack creada con tecnologías de vanguardia: React y
+      TailwindCSS en el frontend, respaldado por Spring Boot y MySQL en el
+      backend.
+    </p>
+    <div slot="tecnologies" class="flex gap-x-2 justify-start items-center">
+      <ReactIcon class="size-8" />
+      <TailwindIcon class="size-6" />
+      <SpringIcon class="size-6" />
+      <MySQLIcon class="size-6 contrast-50" />
+    </div>
+    <div slot="links" class="flex justify-end items-center">
+      <span
+        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
+      >
+        <a
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"

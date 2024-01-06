@@ -32,7 +32,7 @@ const i18n = getI18N({ currentLocale });
 
 <Layout title={i18n.SEO_TITLE} description={i18n.SEO_DESCRIPTION}>
   <main class="px-4 z-20">
-    <SectionContainer class="py-32 pb-22" id="sobre">
+    <SectionContainer class="py-32 pb-22" id="inicio">
       <img
         class="rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 size-[100px] mb-5"
         src="https://imgs.search.brave.com/lJ0VZS-ge2ntzv6ieysqC5qhKHOcqw0ezwiL0YmtZ2s/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzIyLzIw/LzM4LzIyMjAzODUx/ZTQ1NGMxNjBmNjI3/YjZiNzhjOTM3YjNk/LmpwZw"
@@ -147,7 +147,7 @@ const i18n = getI18N({ currentLocale });
       <div class="w-full mx-auto lg:w-[740px] mt-5 mb-5">
         <div class="mx-auto max-w-lg text-center">
           <h1 class="text-2xl font-bold sm:text-3xl">
-            empecemos a Trabajar Hoy!
+            ¡empecemos a trabajar hoy!
           </h1>
 
           <p class="mt-4 text-gray-500">
@@ -171,19 +171,22 @@ const i18n = getI18N({ currentLocale });
                 type="text"
                 class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
                 placeholder="Ingresa tu nombre"
+                required="true"
               />
             </div>
           </div>
 
           <div>
-            <label for="email" class="sr-only">Email</label>
+            <label for="email" class="sr-only">Correo</label>
 
             <div class="relative">
               <input
                 type="email"
                 name="email"
+                id="email"
                 class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
                 placeholder="Enter email"
+                required="true"
               />
 
               <span
@@ -223,7 +226,8 @@ const i18n = getI18N({ currentLocale });
                 pe-12
                 text-sm
                 shadow-sm resize-none"
-                placeholder="Tu mensaje"></textarea>
+                placeholder="Tu mensaje"
+                required="true"></textarea>
             </div>
           </div>
 
