@@ -43,7 +43,9 @@ const PROJECTS = [
   {
     title: "Proyecto FullStack Complementarias -TECNM Campus Zongolica",
     description:
-      "Estoy inmerso en el desarrollo de una plataforma integral para el registro de actividades complementarias de los estudiantes del Tecnológico Nacional de México, Campus Zongolica. Esta plataforma abarca características como: páginas de acceso público, sistema de registro de usuarios, un panel de administración robusto, y medidas de seguridad avanzadas en formularios, entre otros aspectos",
+      "Estoy inmerso en el desarrollo de una plataforma integral para el registro de actividades complementarias de los estudiantes del Tecnológico Nacional de México, Campus Zongolica.",
+    parrafo:
+      "Esta plataforma abarca características como: páginas de acceso público, sistema de registro de usuarios, un panel de administración robusto, y medidas de seguridad avanzadas en formularios, entre otros aspectos.",
     link: "#",
     github: "#",
     image: ProjectsImage,
@@ -60,12 +62,13 @@ const PROJECTS = [
 ---
 
 {
-  PROJECTS.map(({ image, title, description, tags }) => (
+  PROJECTS.map(({ image, title, description, tags, parrafo }) => (
     <article>
       <h3 class="text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2">
         {title}
       </h3>
       <p class="text-lg mb-4 text-pretty">{description}</p>
+      <p class="text-lg mb-4 text-pretty">{parrafo}</p>
       <ul class="flex flex-wrap  gap-x-2 gap-y-1 flex-row mb-2">
         {tags.map((tag) => (
           <li>
