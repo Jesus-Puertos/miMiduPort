@@ -93,11 +93,14 @@
       </p>
 
       <button
-        type="submit"
-        class="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
+        class="group relative z-0 h-12 overflow-hidden overflow-x-hidden rounded-md bg-neutral-950 px-8 py-2 text-neutral-50 border"
+        ><span class="relative z-10">Enviar</span><span
+          class="absolute inset-0 overflow-hidden rounded-md"
+          ><span
+            class="absolute left-0 aspect-square w-full origin-center translate-x-full rounded-full bg-blue-500 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"
+          ></span></span
+        ></button
       >
-        Enviar
-      </button>
       <input
         type="hidden"
         name="_next"

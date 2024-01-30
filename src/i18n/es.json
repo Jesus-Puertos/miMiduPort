@@ -5,14 +5,37 @@
     "SEO_TITLE": "Portfolio de Jesús-Puertos - Desarrollador Web y Programador Web",
     "SEO_DESCRIPTION": "Contratame o ve mis proyectos",
     "INTRO_TITLE": "Hola, soy Jesús Puertos",
-    "BADGE_TITLE": "Desarrollador FullStack Jr.",
+    "BADGE_TITLE": "Dev FullStack Jr.",
     "año de experiencia": "1 año de experiencia.",
     "Desarrollador Web": "Desarrollador Web.",
     "Experiencia en lenguajes de programación como JavaScript y PHP.": "Experiencia en lenguajes de programación como JavaScript y PHP.",
     "Manejo de arquitectura CSS BEM.": "Manejo de arquitectura CSS BEM.",
     "INTRO_SUBTILE2": "Estoy comprometido con el aprendizaje continuo y la aplicación de mis conocimientos en",
     "proyectos prácticos": "proyectos prácticos.",
-    "Education": "Educación:"
+    "Education": "Educación:",
+    "EDUCACION": [
+
+        {
+           "date": "Actualmente...",
+           "title": "Udemy",
+          "description":
+              "Actualmente, estoy en constante formación en Udemy, donde tomo cursos para seguir aprendiendo y desarrollárme como desarrollador."
+          },
+          {
+           "date": "Actualmente...",
+           "title": "TECNM Campus Zongolica",
+          "description":
+              "En este periodo, estoy cursando la carrera de Ingeniería en Sistemas Computacionales en el TECNM Campus Zongolica. Durante mi tiempo aquí, estoy trabajando en diversos proyectos de programación y desarrollo web."
+          },
+          {
+           "date": "2019-2022",
+           "title": "Centro Bachillerato Tecnologico Agropecuario No. 280",
+           "description":
+              "Durante mi estancia en el Centro Bachillerato Tecnológico Agropecuario, adquirí conocimientos técnicos en ofimática y mantenimiento de hardware."
+          }
+
+    ]
+   
 
     
     
