@@ -3,6 +3,7 @@ import "@fontsource-variable/onest";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/stars.css";
+import Stars from "../components/Stars.astro";
 
 interface Props {
   title: string;
@@ -30,15 +31,12 @@ const { currentLocale } = Astro;
       dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
     >
     </div>
-    <div id="stars" class="relative z-10"></div>
-    <div id="stars2" class="relative z-10"></div>
-    <div id="stars3" class="relative z-10"></div>
+    <Stars />
     <Header />
     <slot />
     <Footer />
   </body>
 </html>
-<div class="relative text-black dark:text-white">
   <style is:global>
     :root {
       color-scheme: light dark;
@@ -67,10 +65,10 @@ const { currentLocale } = Astro;
       }
     }
 
-    @media (prefers-color-scheme: dark) {
+    @media (prefers-color-scheme: dark) { 
       body {
         color: rgba(255, 255, 255, 0.9);
       }
     }
   </style>
-</div>
+

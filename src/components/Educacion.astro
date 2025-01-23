@@ -1,25 +1,9 @@
 ---
 import EducacionItem from "./EducacionItem.astro";
-const EDUCACION = [
-  {
-    date: "Actualmente...",
-    title: "Udemy",
-    description:
-      "Actualmente, estoy en constante formación en Udemy, donde tomo cursos para seguir aprendiendo y desarrollárme como desarrollador.",
-  },
-  {
-    date: "Actualmente...",
-    title: "TECNM Campus Zongolica",
-    description:
-      "En este periodo, estoy cursando la carrera de Ingeniería en Sistemas Computacionales en el TECNM Campus Zongolica. Durante mi tiempo aquí, estoy trabajando en diversos proyectos de programación y desarrollo web.",
-  },
-  {
-    date: "2019-2022",
-    title: "Centro Bachillerato Tecnologico Agropecuario No. 280",
-    description:
-      "Durante mi estancia en el Centro Bachillerato Tecnológico Agropecuario, adquirí conocimientos técnicos en ofimática y mantenimiento de hardware.",
-  },
-];
+import { getI18N } from "../i18n/";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const EDUCACION = i18n.EDUCACION;
 ---
 
 <ol class="relative border-s border-gray-200 ml-3">

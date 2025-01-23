@@ -1,30 +1,30 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Badge from "../components/Badge.astro";
-import SocialPill from "../components/SocialPill.astro";
-import TrabajoIcon from "../components/icons/Trabajo.astro";
-import GithubIcon from "../components/icons/Github.astro";
-import MailIcon from "../components/icons/Mail.astro";
-import Timeline from "../components/Timeline.astro";
-import SectionContainer from "../components/SectionContainer.astro";
-import BriefCaseIcon from "../components/icons/BriefCase.astro";
-import PortfolioIcon from "../components/icons/Portfolio.astro";
-import FormContact from "../components/FormContact.astro";
-import Projects from "../components/Projects.astro";
-import Educacion from "../components/Educacion.astro";
-import Education from "../components/icons/Education.astro";
-import Tecnologies from "../components/Tecnologies.astro";
-import CSSIcon from "../assets/icons/CSS.astro";
-import HTMLIcon from "../assets/icons/HTML.astro";
-import PHPIcon from "../assets/icons/PHP.astro";
-import JavaScriptIcon from "../assets/icons/JavaScript.astro";
-import ReactIcon from "../assets/icons/React.astro";
-import TailwindIcon from "../assets/icons/Tailwind.astro";
-import SassIcon from "../assets/icons/Sass.astro";
-import GitIcon from "../assets/icons/Git.astro";
-import WordpressIcon from "../assets/icons/Wordpress.astro";
-import MySQLIcon from "../assets/icons/MySQL.astro";
-import Bento from "../components/Bento.astro";
+import Layout from "@/layouts/Layout.astro";
+import Badge from "@/components/Badge.astro";
+import SocialPill from "@/components/SocialPill.astro";
+import TrabajoIcon from "@/components/icons/Trabajo.astro";
+import GithubIcon from "@/components/icons/Github.astro";
+import MailIcon from "@/components/icons/Mail.astro";
+import Timeline from "@/components/Timeline.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import BriefCaseIcon from "@/components/icons/BriefCase.astro";
+import PortfolioIcon from "@/components/icons/Portfolio.astro";
+import FormContact from "@/components/FormContact.astro";
+import Projects from "@/components/Projects.astro";
+import Educacion from "@/components/Educacion.astro";
+import Education from "@/components/icons/Education.astro";
+import Tecnologies from "@/components/Tecnologies.astro";
+import CSSIcon from "@/assets/icons/CSS.astro";
+import HTMLIcon from "@/assets/icons/HTML.astro";
+import PHPIcon from "@/assets/icons/PHP.astro";
+import JavaScriptIcon from "@/assets/icons/JavaScript.astro";
+import ReactIcon from "@/assets/icons/React.astro";
+import TailwindIcon from "@/assets/icons/Tailwind.astro";
+import SassIcon from "@/assets/icons/Sass.astro";
+import GitIcon from "@/assets/icons/Git.astro";
+import WordpressIcon from "@/assets/icons/Wordpress.astro";
+import MySQLIcon from "@/assets/icons/MySQL.astro";
+import Bento from "@/components/Bento.astro";
 
 import { getI18N } from "../i18n/";
 const { currentLocale } = Astro;
@@ -125,7 +125,7 @@ const i18n = getI18N({ currentLocale });
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
         <BriefCaseIcon class="size-8 mr-4" />
-        Experiencia:
+        {i18n.Experiencia}
       </h2>
       <Timeline />
     </SectionContainer>
