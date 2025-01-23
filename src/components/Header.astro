@@ -1,3 +1,7 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+---
+
 <header
   class={`
     flex justify-center items-center
@@ -11,10 +15,11 @@
   <nav
     class={`
       border border-black rounded-full
-      px-3 py-2
+      px-1 py-1
       flex flex-row items-center
       bg-neutral-200 dark:bg-black/50
       backdrop-blur-2xl
+      mt-2
     `}
   >
     <a class="hover:bg-white/10 rounded-full px-3 transition" href="#inicio"
@@ -30,5 +35,6 @@
     <a class="hover:bg-white/10 rounded-full px-3 transition" href="#contacto"
       >Contacto</a
     >
+    <ThemeToggle />
   </nav>
 </header>

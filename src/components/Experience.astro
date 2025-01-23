@@ -3,15 +3,20 @@ interface Props {
   title: string;
   description: string;
   link?: string;
+  highlights?: string;
   date: string;
 }
 
-const { title, description, link, date } = Astro.props;
+const { title, description,highlights, link, date } = Astro.props;
 ---
 
 <div
   class="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"
 >
+</div>
+
+<div>
+  
 </div>
 <time
   class="mb-1 text-sm font-normal leading-none text-sky-800 dark:text-sky-200/80"
@@ -20,9 +25,35 @@ const { title, description, link, date } = Astro.props;
 <h3 class="text-lg font-semibold text-yellow-800 dark:text-yellow-200 mt-2">
   {title}
 </h3>
-<p class="mb-4 text-base font-normal dark:text-gray-200 text-pretty">
-  {description}
-</p>
+<p class="mb-4 text-base font-normal dark:text-gray-200 text-pretty"
+set:html={description}
+></p>
+
+{highlights && (
+  <ul class="mb-4 text-base font-normal dark:text-gray-200 text-pretty">
+    {highlights.map((highlight) => (
+
+      <li class="decoration-transparent rounded-md border border-gray-500 mb-3 px-1 py-2 ml-3 flex items-center">
+        <svg
+          class="w-4 h-4 text-yellow-500 mr-2"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+        {highlight}
+      </li>
+    ))}
+  </ul>
+)}
+
 {
   link && (
     <a

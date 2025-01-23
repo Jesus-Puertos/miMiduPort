@@ -1,6 +1,5 @@
 {
-    
-    "SEO_TITLE": "Portfolio de Jesús-Puertos - Developer Web and Web Programmer",
+    "SEO_TITLE": "Portfolio of Jesús-Puertos - Web Developer and Web Programmer",
     "SEO_DESCRIPTION": "Hire me or see my projects",
 
     "INTRO_TITLE": "Hi, I'm Jesús Puertos",
@@ -12,8 +11,23 @@
     "INTRO_SUBTILE2": "I am committed to continuous learning and the application of my knowledge in",
     "proyectos prácticos": "practical projects.",
 
-    "Education": "Education:"
-    
-
-    
+    "Education": "Education:",
+    "EDUCACION": [
+        {
+           "date": "For now...",
+           "title": "Udemy",
+           "description": "Currently, I am in constant training on Udemy, where I take courses to continue learning and developing as a developer."
+        },
+        {
+           "date": "Currently...",
+           "title": "TECNM Campus Zongolica",
+           "description": "During this period, I am pursuing a degree in Computer Systems Engineering at TECNM Campus Zongolica. During my time here, I am working on various programming and web development projects."
+        },
+        {
+           "date": "2019-2022",
+           "title": "Centro Bachillerato Tecnologico Agropecuario No. 280",
+           "description": "During my time at the Centro Bachillerato Tecnológico Agropecuario, I acquired technical knowledge in office automation and hardware maintenance."
+        }
+    ],
+    "Experiencia": "Experience:"
 }

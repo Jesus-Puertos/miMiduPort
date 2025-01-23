@@ -1,42 +1,54 @@
-
-
-
 {
-    "SEO_TITLE": "Portfolio de Jesús-Puertos - Desarrollador Web y Programador Web",
-    "SEO_DESCRIPTION": "Contratame o ve mis proyectos",
-    "INTRO_TITLE": "Hola, soy Jesús Puertos",
-    "BADGE_TITLE": "Dev FullStack Jr.",
-    "año de experiencia": "1 año de experiencia.",
-    "Desarrollador Web": "Desarrollador Web.",
-    "Experiencia en lenguajes de programación como JavaScript y PHP.": "Experiencia en lenguajes de programación como JavaScript y PHP.",
-    "Manejo de arquitectura CSS BEM.": "Manejo de arquitectura CSS BEM.",
-    "INTRO_SUBTILE2": "Estoy comprometido con el aprendizaje continuo y la aplicación de mis conocimientos en",
-    "proyectos prácticos": "proyectos prácticos.",
-    "Education": "Educación:",
-    "EDUCACION": [
+  "SEO_TITLE": "Portfolio de Jesús-Puertos - Desarrollador Web y Programador Web",
+  "SEO_DESCRIPTION": "Contratame o ve mis proyectos",
+  "INTRO_TITLE": "Hola, soy Jesús Puertos",
+  "BADGE_TITLE": "Dev FullStack Jr.",
+  "año de experiencia": "1 año de experiencia.",
+  "Desarrollador Web": "Desarrollador Web.",
+  "Experiencia en lenguajes de programación como JavaScript y PHP.": "Experiencia en lenguajes de programación como JavaScript y PHP.",
+  "Manejo de arquitectura CSS BEM.": "Manejo de arquitectura CSS BEM.",
+  "INTRO_SUBTILE2": "Estoy comprometido con el aprendizaje continuo y la aplicación de mis conocimientos en",
+  "proyectos prácticos": "proyectos prácticos.",
+  "Education": "Educación:",
+  "EDUCACION": [
+    {
+      "date": "Actualmente...",
+      "title": "Udemy",
+      "description": "Me mantengo en constante formación con cursos avanzados en desarrollo web y frameworks modernos, como <strong>Astro</strong> y <strong>React</strong>, fortaleciendo mis habilidades técnicas."
+    },
+    {
+      "date": "Actualmente...",
+      "title": "TECNM Campus Zongolica",
+      "description": "Estudiante de <strong>Ingeniería en Sistemas Computacionales</strong>. He desarrollado soluciones como una plataforma integral para actividades complementarias y he participado en competencias tecnológicas, obteniendo reconocimientos destacados como el primer lugar en <em>HackaTECNM 2024</em>.",
+      "link": "https://www.tecnm.mx/"
+    },
+    {
+      "date": "2019-2022",
+      "title": "Centro Bachillerato Tecnológico Agropecuario No. 280",
+      "description": "Durante mi estancia en el <strong>Centro Bachillerato Tecnológico Agropecuario</strong>, adquirí conocimientos técnicos en <span>ofimática</span> y mantenimiento de hardware."
+    }
+  ],
+  "Experiencia":"Experiencia:",
+  "EXPERIENCIA": [
+       {
+        "date": "18 de noviembre de 2024 - 22 de noviembre de 2024",
+        "title": "Participación en InnovaTECNM 2024 fase nacional en la categoría de Hackatec",
+        "description": "Participé en el evento de InnovaTECNM 2024 en la categoría de Hackatec, representando a la región de Veracruz en Colima. Desarrollé una aplicación innovadora para Volvo Group México S.A. de C.V. utilizando tecnologías de Realidad Aumentada (AR), enfocada en la visualización y manipulación de modelos 3D en un entorno interactivo.",
+        "highlights": [
+            "Diseño e implementación de una aplicación AR para la visualización, rotación y expansión de modelos 3D.",
+            "Integración de herramientas para medir distancias y analizar dimensiones de objetos en entornos inmersivos.",
+            "Uso de herramientas para separar componentes de modelos 3D y visualizarlos de forma independiente.",
+            "Colaboración en equipo para presentar una solución funcional y efectiva a los desafíos propuestos por Volvo.",
+            "Reconocimiento por la creatividad y aplicabilidad del proyecto en la industria automotriz."
+        ]
+    },
+    {
+      "date": "24 de Septiembre de 2024 - 27 de Septiembre de 2024",
+      "title": "Participación en InnovaTECNM 2024 fase regional en la categoría de Hackatec",
+      "description":
+        "Participe en el evento de InnovaTECNM 2024 en la categoría de Hackatec, donde obtuve el primer lugar con mi equipo Siera Code. Desarrollamos BeelTraveler una plataforma de gestión de agencies de viajes, la cual fue desarrollada con tecnologías como Astro, React, Face Tec, Node.js, TypeForm, MySQL, y TailwindCSS. El proyecto fue presentado en la fase regional de InnovaTECNM 2024, donde <strong>obtuvimos el primer lugar y la oportunidad de participar en la fase nacional.<strong>",
+      "link": "https://beeltraveler-repo-tecnm.vercel.app/"
+    }
+  ]
 
-        {
-           "date": "Actualmente...",
-           "title": "Udemy",
-          "description":
-              "Actualmente, estoy en constante formación en Udemy, donde tomo cursos para seguir aprendiendo y desarrollárme como desarrollador."
-          },
-          {
-           "date": "Actualmente...",
-           "title": "TECNM Campus Zongolica",
-          "description":
-              "En este periodo, estoy cursando la carrera de Ingeniería en Sistemas Computacionales en el TECNM Campus Zongolica. Durante mi tiempo aquí, estoy trabajando en diversos proyectos de programación y desarrollo web."
-          },
-          {
-           "date": "2019-2022",
-           "title": "Centro Bachillerato Tecnologico Agropecuario No. 280",
-           "description":
-              "Durante mi estancia en el Centro Bachillerato Tecnológico Agropecuario, adquirí conocimientos técnicos en ofimática y mantenimiento de hardware."
-          }
-
-    ]
-   
-
-    
-    
 }

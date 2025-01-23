@@ -1,33 +1,9 @@
 ---
 import ExperienceItem from "./Experience.astro";
-const EXPERIENCIE = [
-  {
-    date: "Actualmente...",
-    title: "Proyecto de complementarias -TECNM Campus Zongolica",
-    description:
-      "Estoy Desarrollando una plataforma para el registro de actividades complementarias de los estudiantes del Tecnológico Nacional de México Campus Zongolica.",
-    link: "https://github.com/Jesus-Puertos",
-  },
-  {
-    date: "Agosto - 2022 - Actualmente",
-    title: "Experiencia Adquirida A Través De Prácticas En Cursos De Udemy",
-    description:
-      "Durante mis prácticas, he estado tomando cursos en Udemy para aprender y mejorar mis habilidades en áreas como JavaScript, HTML, y CSS, PHP, manejo de Frameworks como Next.js Esta experiencia me ha permitido ganar un conjunto diverso de conocimientos de manera continua",
-  },
-  {
-    date: "Enero 2023",
-    title: "Lider De Proyecto Web De Cultura Tributaria",
-    description:
-      "Lideré un proyecto en el que creamos un sitio web centrado en la cultura tributaria. El sitio incluía juegos interactivos, información detallada sobre el tema y animaciones de texto. Además, desarrollé mi propio juego utilizando JavaScript y participé activamente en el desarrollo integral del sitio. El proyecto fue entregado al municipio de Ixhuatlancillo, Veracruz.",
-  },
-  {
-    date: "Junio 2022",
-    title:
-      "Coordinador Y Diseñador Web En Proyecto De Página De Cafetería Usando Wix",
-    description:
-      "Participé en la creación de una página web para una cafetería utilizando Wix como parte de un proyecto final en equipo. Mi participación fue activa en el diseño y lideré el proyecto debido a mi experiencia y conocimiento en el tema.",
-  },
-];
+import { getI18N } from "../i18n/";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const EXPERIENCIE = i18n.EXPERIENCIA;
 ---
 
 <ol class="relative border-s border-gray-200 ml-3">
