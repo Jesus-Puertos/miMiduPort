@@ -9,6 +9,9 @@ import ReactIcon from "../assets/icons/React.astro";
 import TailwindIcon from "../assets/icons/Tailwind.astro";
 import SpringIcon from "../assets/icons/Spring.astro";
 import MySQLIcon from "../assets/icons/MySQL.astro";
+import AstroIcon from "../assets/icons/Astro.astro";  
+import TypeScriptIcon from "../assets/icons/TypeScript.astro";
+import WordpressIcon from "@/assets/icons/Wordpress.astro";
 ---
 
 <section
@@ -57,7 +60,7 @@ import MySQLIcon from "../assets/icons/MySQL.astro";
   <BentoItem
     class="col-span-10 md:col-span-6"
     title="IngeTec"
-    subtitle="Septiembre 2023."
+    subtitle="Marzo 2025."
   >
     <div
       slot="image"
@@ -69,14 +72,17 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
     </div>
 
     <p slot="content" class="max-w-xl text-base md:text-lg text-white">
-      Sitio web estatico para el cuerpo academico INGETEC del TECNM Campus
-      Zongolica.
+      Sitio web para el cuerpo academico INGETEC del TECNM Campus
+      Zongolica. Usando Wordpress Headless y Astro Js
     </p>
 
     <div slot="tecnologies" class="flex gap-x-2 justify-start items-center">
       <HTMLIcon class="size-8" />
+      <AstroIcon class="size-6" />
       <CSSIcon class="size-6" />
       <JavaScriptIcon class="size-6" />
+      <TypeScriptIcon class="size-6" />
+      <WordpressIcon class="size-6" />
     </div>
     <div slot="links" class="flex justify-end items-center">
       <span
@@ -93,7 +99,7 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
         </a>
 
         <a
-          href="https://github.com/Jesus-Puertos/Cuerpo-academico-ingetec"
+          href="https://github.com/Jesus-Puertos/ingetec-astro-version"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
@@ -141,15 +147,7 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
           <span class="sr-only">Ver demo</span>
         </a>
 
-        <a
-          href="https://proyecto-3-blog-de-cafejp.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
-        >
-          <GithubIcon class="size-5" />
-          <span class="sr-only">Abrir en GitHub</span>
-        </a>
+        
       </span>
     </div>
   </BentoItem>
@@ -181,18 +179,10 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       <span
         class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
       >
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
-        >
-          <BoxArrowIcon class="size-5" />
-          <span class="sr-only">Ver demo</span>
-        </a>
+      
 
         <a
-          href="#"
+          href="https://github.com/Jesus-Puertos/Gato"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
@@ -280,20 +270,6 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       <SpringIcon class="size-6" />
       <MySQLIcon class="size-6 contrast-50" />
     </div>
-    <div slot="links" class="flex justify-end items-center">
-      <span
-        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
-      >
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
-        >
-          <GithubIcon class="size-5" />
-          <span class="sr-only">Abrir en GitHub</span>
-        </a>
-      </span>
-    </div>
+    
   </BentoItem>
 </section>
