@@ -1,46 +1,44 @@
 <div class="w-full mx-auto lg:w-[740px] mt-5 mb-5">
   <div class="mx-auto max-w-lg text-center">
-    <h1 class="text-2xl font-bold sm:text-3xl">¡empecemos a trabajar hoy!</h1>
-
-    <p class="mt-4 text-gray-500">
+    <h1 class="text-2xl font-bold sm:text-3xl">¡Empecemos a trabajar hoy!</h1>
+    <p class="mt-4 text-gray-500 dark:text-gray-400">
       Envíame un mensaje y te contestaré lo más pronto posible.
     </p>
   </div>
 
   <form
-    action="https://formsubmit.co/226w0496@zongolica.tecnm.mx"
+    action="https://formsubmit.co/jesuspuertos.engineer@gmail.com"
     method="POST"
     class="mx-auto mb-0 mt-8 max-w-md space-y-4"
   >
     <input type="hidden" name="_template" value="table" />
+    <input type="hidden" name="_next" value="https://jesuspuertos.com" />
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portfolio" />
+
     <div>
       <label for="name" class="sr-only">Nombre</label>
-
-      <div class="relative">
-        <input
-          name="name"
-          id="name"
-          type="text"
-          class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-          placeholder="Ingresa tu nombre"
-          required="true"
-        />
-      </div>
+      <input
+        name="name"
+        id="name"
+        type="text"
+        class="w-full rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-neutral-900 text-gray-900 dark:text-white p-4 pe-12 text-sm shadow-sm placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Tu nombre"
+        required
+      />
     </div>
 
     <div>
       <label for="email" class="sr-only">Correo</label>
-
       <div class="relative">
         <input
           type="email"
           name="email"
           id="email"
-          class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-          placeholder="Enter email"
-          required="true"
+          class="w-full rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-neutral-900 text-gray-900 dark:text-white p-4 pe-12 text-sm shadow-sm placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Tu correo electrónico"
+          required
         />
-
         <span class="absolute inset-y-0 end-0 grid place-content-center px-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -62,51 +60,40 @@
 
     <div>
       <label for="message" class="sr-only">Mensaje</label>
-
-      <div class="relative">
-        <textarea
-          name="message"
-          id="message"
-          cols="30"
-          rows="5"
-          class="w-full
-            rounded-lg
-            border-gray-200
-            p-4
-            pe-12
-            text-sm
-            shadow-sm resize-none"
-          placeholder="Tu mensaje"
-          required="true"></textarea>
-      </div>
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="5"
+        class="w-full rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-neutral-900 text-gray-900 dark:text-white p-4 text-sm shadow-sm placeholder-gray-400 dark:placeholder-gray-500 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Tu mensaje"
+        required></textarea>
     </div>
 
     <div class="flex items-center justify-between text-balance">
-      <p class="text-sm text-gray-500">
-        ¿No quieres enviarme correo?
+      <p class="text-sm text-gray-500 dark:text-gray-400">
+        ¿Prefieres LinkedIn?
         <a
-          class="underline"
-          href="https://www.linkedin.com/in/jes%C3%BAs-puertos-mx/"
+          class="underline hover:text-gray-700 dark:hover:text-gray-200 transition"
+          href="https://www.linkedin.com/in/jesus-puertos-mx/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Checa mi LinkedIn</a
+          Escríbeme aquí</a
         >
       </p>
 
       <button
-        class="group relative z-0 h-12 overflow-hidden overflow-x-hidden rounded-md bg-neutral-950 px-8 py-2 text-neutral-50 border"
-        ><span class="relative z-10">Enviar</span><span
-          class="absolute inset-0 overflow-hidden rounded-md"
-          ><span
-            class="absolute left-0 aspect-square w-full origin-center translate-x-full rounded-full bg-blue-500 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"
-          ></span></span
-        ></button
+        type="submit"
+        class="group relative z-0 h-12 overflow-hidden rounded-md bg-neutral-950 dark:bg-white dark:text-neutral-950 px-8 py-2 text-neutral-50 border border-transparent dark:border-gray-200 transition hover:opacity-90"
       >
-      <input
-        type="hidden"
-        name="_next"
-        value="https://jesus-puertosdev.netlify.app/"
-      />
-      <input type="hidden" name="_captcha" value="false" />
+        <span class="relative z-10">Enviar</span>
+        <span class="absolute inset-0 overflow-hidden rounded-md">
+          <span
+            class="absolute left-0 aspect-square w-full origin-center translate-x-full rounded-full bg-blue-500 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"
+          ></span>
+        </span>
+      </button>
     </div>
   </form>
 </div>

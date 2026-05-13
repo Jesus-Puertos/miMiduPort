@@ -2,6 +2,7 @@
 import HTMLIcon from "../assets/icons/HTML.astro";
 import CSSIcon from "../assets/icons/CSS.astro";
 import JavaScriptIcon from "../assets/icons/JavaScript.astro";
+import PHPIcon from "../assets/icons/PHP.astro";
 import BentoItem from "./BentoItem.astro";
 import GithubIcon from "./icons/Github.astro";
 import BoxArrowIcon from "./icons/BoxArrow.astro";
@@ -9,9 +10,10 @@ import ReactIcon from "../assets/icons/React.astro";
 import TailwindIcon from "../assets/icons/Tailwind.astro";
 import SpringIcon from "../assets/icons/Spring.astro";
 import MySQLIcon from "../assets/icons/MySQL.astro";
-import AstroIcon from "../assets/icons/Astro.astro";  
+import AstroIcon from "../assets/icons/Astro.astro";
 import TypeScriptIcon from "../assets/icons/TypeScript.astro";
 import WordpressIcon from "@/assets/icons/Wordpress.astro";
+import SupabaseIcon from "@/assets/icons/Supabase.astro";
 ---
 
 <section
@@ -21,73 +23,69 @@ import WordpressIcon from "@/assets/icons/Wordpress.astro";
     mx-auto p-6 md:p-12 lg:p-20
   `}
 >
+  <!-- Portal Turístico de Zongolica -->
   <BentoItem
-    class="col-span-10 md:col-span-4"
-    title="Cadem"
-    subtitle="Junio 2022"
+    class="col-span-10 md:col-span-6"
+    title="Portal Turístico Zongolica"
+    subtitle="2026 · En producción"
   >
     <div
       slot="image"
       class="transition-scale absolute bottom-0 left-0 top-0
     -z-10 h-full w-full bg-black-950
-    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-      style="background-image: url('/images/proyecto-wix-cadem.webp')"
+    bg-cover bg-top bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/images/portal_turistico.png')"
     >
     </div>
-
     <p slot="content" class="max-w-xl text-base md:text-lg text-white">
-      Sitio web hecho con Wix.
-      <!-- Tecnologias -->
+      Plataforma turística para el H. Ayuntamiento de Zongolica con rutas, atractivos, tickets digitales con QR y planificación de visita.
     </p>
-
+    <div slot="tecnologies" class="flex gap-x-2 justify-start items-center">
+      <AstroIcon class="size-6 text-white" />
+      <ReactIcon class="size-6" />
+      <TypeScriptIcon class="size-6" />
+      <TailwindIcon class="size-6" />
+    </div>
     <div slot="links" class="flex justify-end items-center">
-      <span
-        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
-      >
+      <span class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center">
         <a
-          href="https://excreplex.wixsite.com/cadem"
+          href="https://zongolica.gob.mx/turismo"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
         >
           <BoxArrowIcon class="size-5" />
-          <span class="sr-only">Ver demo</span>
+          <span class="sr-only">Ver proyecto</span>
         </a>
       </span>
     </div>
   </BentoItem>
 
+  <!-- IngeTec -->
   <BentoItem
-    class="col-span-10 md:col-span-6"
+    class="col-span-10 md:col-span-4"
     title="IngeTec"
-    subtitle="Marzo 2025."
+    subtitle="Marzo 2025"
   >
     <div
       slot="image"
       class="transition-scale absolute bottom-0 left-0 top-0
 -z-10 h-full w-full bg-black-950
-bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+bg-cover bg-top bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
       style="background-image: url('/images/IngeTec.webp')"
     >
     </div>
-
     <p slot="content" class="max-w-xl text-base md:text-lg text-white">
-      Sitio web para el cuerpo academico INGETEC del TECNM Campus
-      Zongolica. Usando Wordpress Headless y Astro Js
+      Sitio web para el cuerpo académico INGETEC del TECNM Campus Zongolica. Usando Wordpress Headless y Astro Js.
     </p>
-
     <div slot="tecnologies" class="flex gap-x-2 justify-start items-center">
-      <HTMLIcon class="size-8" />
-      <AstroIcon class="size-6" />
-      <CSSIcon class="size-6" />
-      <JavaScriptIcon class="size-6" />
+      <AstroIcon class="size-6 text-white" />
       <TypeScriptIcon class="size-6" />
+      <JavaScriptIcon class="size-6" />
       <WordpressIcon class="size-6" />
     </div>
     <div slot="links" class="flex justify-end items-center">
-      <span
-        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
-      >
+      <span class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center">
         <a
           href="https://ingetec-jesus-puertos.netlify.app/"
           target="_blank"
@@ -97,7 +95,6 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
           <BoxArrowIcon class="size-5" />
           <span class="sr-only">Ver demo</span>
         </a>
-
         <a
           href="https://github.com/Jesus-Puertos/ingetec-astro-version"
           target="_blank"
@@ -111,34 +108,71 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
     </div>
   </BentoItem>
 
+  <!-- Sistema de Votación Reinas Feria 2026 -->
   <BentoItem
     class="col-span-10 md:col-span-6"
-    title="Blog de café"
-    subtitle="Agosto 2023"
+    title="Votación Reinas · Feria 2026"
+    subtitle="Zongolica · Tiempo real"
   >
     <div
       slot="image"
       class="transition-scale absolute bottom-0 left-0 top-0
--z-10 h-full w-full bg-black-950
-bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
-      style="background-image: url('/images/blog-de-cafe-udemy.webp')"
+    -z-10 h-full w-full bg-black-950
+    bg-cover bg-top bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/images/sistema_votacion_reinas_feria_zongolica.png')"
     >
     </div>
-
     <p slot="content" class="max-w-xl text-base md:text-lg text-white">
-      Landing page de un blog de café.
+      Sistema de votación en tiempo real para las reinas de la Feria de Zongolica 2026. Auth con Google, perfiles de candidatas, contador en vivo y tabla de votos con Supabase Realtime.
     </p>
     <div slot="tecnologies" class="flex gap-x-2 justify-start items-center">
-      <HTMLIcon class="size-8" />
-      <CSSIcon class="size-6" />
-      <JavaScriptIcon class="size-6" />
+      <AstroIcon class="size-6 text-white" />
+      <ReactIcon class="size-6" />
+      <TypeScriptIcon class="size-6" />
+      <TailwindIcon class="size-6" />
+      <SupabaseIcon class="size-6" />
     </div>
     <div slot="links" class="flex justify-end items-center">
-      <span
-        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
-      >
+      <span class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center">
         <a
-          href="https://proyecto-3-blog-de-cafejp.netlify.app/"
+          href="https://zongolica.gob.mx/feria2026/reinas"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <BoxArrowIcon class="size-5" />
+          <span class="sr-only">Ver proyecto</span>
+        </a>
+      </span>
+    </div>
+  </BentoItem>
+
+  <!-- BeelTraveler -->
+  <BentoItem
+    class="col-span-10 md:col-span-4"
+    title="BeelTraveler"
+    subtitle="HackaTECNM 2024 · 1er lugar regional"
+  >
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/images/beeltraveler.png');"
+    >
+    </div>
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      Plataforma para conectar agencias de turismo con clientes y guías locales. Primer lugar regional en HackaTECNM 2024.
+    </p>
+    <div slot="tecnologies" class="flex gap-x-2 justify-start items-center">
+      <AstroIcon class="size-6 text-white" />
+      <ReactIcon class="size-6" />
+      <MySQLIcon class="size-6" />
+      <TailwindIcon class="size-6" />
+    </div>
+    <div slot="links" class="flex justify-end items-center">
+      <span class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center">
+        <a
+          href="https://beeltraveler-repo-tecnm.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
@@ -146,12 +180,49 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
           <BoxArrowIcon class="size-5" />
           <span class="sr-only">Ver demo</span>
         </a>
-
-        
       </span>
     </div>
   </BentoItem>
 
+  <!-- TECNM Complementarias -->
+  <BentoItem
+    class="col-span-10 md:col-span-6"
+    title="Sistema Complementarias"
+    subtitle="TECNM Campus Zongolica"
+  >
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+-z-10 h-full w-full bg-black-950
+bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-105"
+      style="background-image: url('/images/TECNMComplementarias.webp')"
+    >
+    </div>
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      Plataforma integral para el registro de actividades complementarias de estudiantes. Sistema de usuarios, panel de administración y seguridad en formularios.
+    </p>
+    <div slot="tecnologies" class="flex gap-x-2 justify-start items-center">
+      <PHPIcon class="size-6" />
+      <JavaScriptIcon class="size-6" />
+      <MySQLIcon class="size-6" />
+      <CSSIcon class="size-6" />
+    </div>
+    <div slot="links" class="flex justify-end items-center">
+      <span class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center">
+        <a
+          href="https://github.com/Jesus-Puertos/complementarias-proyecto.git"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <GithubIcon class="size-5" />
+          <span class="sr-only">Abrir en GitHub</span>
+        </a>
+      </span>
+    </div>
+  </BentoItem>
+
+  <!-- Gatito Millonario -->
   <BentoItem
     class="col-span-10 md:col-span-4"
     title="Gatito Millonario"
@@ -165,10 +236,8 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       style="background-image: url('/images/gatito-millonario.webp')"
     >
     </div>
-
     <p slot="content" class="max-w-xl text-base md:text-lg text-white">
-      Juego para el sitio de cultura tributaria desarrollado con JavaScript y
-      Canvas.
+      Juego para el sitio de cultura tributaria desarrollado con JavaScript y Canvas.
     </p>
     <div slot="tecnologies" class="flex gap-x-2 justify-start items-center">
       <HTMLIcon class="size-8" />
@@ -176,11 +245,7 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       <JavaScriptIcon class="size-6" />
     </div>
     <div slot="links" class="flex justify-end items-center">
-      <span
-        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
-      >
-      
-
+      <span class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center">
         <a
           href="https://github.com/Jesus-Puertos/Gato"
           target="_blank"
@@ -194,6 +259,7 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
     </div>
   </BentoItem>
 
+  <!-- Control de Gastos -->
   <BentoItem
     class="col-span-10 md:col-span-6"
     title="Control de Gastos"
@@ -207,21 +273,15 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       style="background-image: linear-gradient(to right, rgb(0 0 0 /0.2),rgb(0 0 0 / 0)),url('/images/control-gastos.webp')"
     >
     </div>
-
     <p slot="content" class="max-w-xl text-base md:text-lg text-white">
-      Aplicación de React con CSS puro, que sirve para ayudar a controlar los
-      gastos mensuales. Tiene Local Storage para guardar los datos. y se puede
-      agregar, eliminar y editar los gastos. Se puede filtrar por categorías.
-      Tiene un presupuesto y un restante.
+      Aplicación de React con CSS puro para controlar gastos mensuales. Incluye Local Storage, filtro por categorías, presupuesto y restante.
     </p>
     <div slot="tecnologies" class="flex gap-x-2 justify-start items-center">
       <ReactIcon class="size-8" />
       <CSSIcon class="size-6" />
     </div>
     <div slot="links" class="flex justify-end items-center">
-      <span
-        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
-      >
+      <span class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center">
         <a
           href="https://control-gastos-appjp.netlify.app/"
           target="_blank"
@@ -231,7 +291,6 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
           <BoxArrowIcon class="size-5" />
           <span class="sr-only">Ver demo</span>
         </a>
-
         <a
           href="https://github.com/Jesus-Puertos/control-gastos"
           target="_blank"
@@ -245,9 +304,10 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
     </div>
   </BentoItem>
 
+  <!-- Sistema de Recursos Humanos -->
   <BentoItem
     class="col-span-10 md:col-span-4"
-    title="Sistema de recursos humanos"
+    title="Sistema de Recursos Humanos"
     subtitle="Enero 2024"
   >
     <div
@@ -258,11 +318,8 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       style="background-image: linear-gradient(to right, rgb(0 0 0 /0.4),rgb(0 0 0 / 0)),url('/images/recursos-humanos-proyecto.webp')"
     >
     </div>
-
     <p slot="content" class="max-w-xl text-base md:text-lg text-white">
-      Aplicación FullStack creada con tecnologías de vanguardia: React y
-      TailwindCSS en el frontend, respaldado por Spring Boot y MySQL en el
-      backend.
+      Aplicación FullStack con React y TailwindCSS en el frontend, respaldado por Spring Boot y MySQL en el backend.
     </p>
     <div slot="tecnologies" class="flex gap-x-2 justify-start items-center">
       <ReactIcon class="size-8" />
@@ -270,6 +327,5 @@ bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 eas
       <SpringIcon class="size-6" />
       <MySQLIcon class="size-6 contrast-50" />
     </div>
-    
   </BentoItem>
 </section>

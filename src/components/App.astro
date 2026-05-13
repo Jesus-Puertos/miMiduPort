@@ -18,12 +18,15 @@ import CSSIcon from "@/assets/icons/CSS.astro";
 import HTMLIcon from "@/assets/icons/HTML.astro";
 import PHPIcon from "@/assets/icons/PHP.astro";
 import JavaScriptIcon from "@/assets/icons/JavaScript.astro";
+import TypeScriptIcon from "@/assets/icons/TypeScript.astro";
 import ReactIcon from "@/assets/icons/React.astro";
+import AstroIcon from "@/assets/icons/Astro.astro";
 import TailwindIcon from "@/assets/icons/Tailwind.astro";
 import SassIcon from "@/assets/icons/Sass.astro";
 import GitIcon from "@/assets/icons/Git.astro";
 import WordpressIcon from "@/assets/icons/Wordpress.astro";
 import MySQLIcon from "@/assets/icons/MySQL.astro";
+import SupabaseIcon from "@/assets/icons/Supabase.astro";
 import Bento from "@/components/Bento.astro";
 
 import { getI18N } from "../i18n/";
@@ -35,11 +38,14 @@ const i18n = getI18N({ currentLocale });
   <main class="px-4 z-20">
     <SectionContainer class="py-32 pb-22" id="inicio">
       <img
-        class="rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 size-[100px] mb-5 object-cover image-rendering: crisp-edges  "
+        class="rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 size-[100px] mb-5 object-cover"
         src="/me.jpg"
-        alt="JesusPuertos Avatar"
+        alt="Foto de Jesús Puertos"
         width="100"
-
+        height="100"
+        fetchpriority="high"
+        decoding="async"
+        loading="eager"
       />
       <h1
         class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row md:gap-x-4 pb-6 lg:pb-10"
@@ -78,14 +84,14 @@ const i18n = getI18N({ currentLocale });
       </h2>
 
       <nav class="flex gap-x-4 gap-y-2 mt-8 flex-wrap">
-        <SocialPill href="https://www.linkedin.com/in/jes%C3%BAs-puertos-mx/">
+        <SocialPill href="https://www.linkedin.com/in/jesus-puertos-mx/">
           <TrabajoIcon class="size-4 md:size-6" /> LinkedIn
         </SocialPill>
         <SocialPill href="https://github.com/Jesus-Puertos">
           <GithubIcon class="size-4 md:size-6" /> Github
         </SocialPill>
-        <SocialPill href="https://github.com/Jesus-Puertos">
-          <MailIcon class="size-4 md:size-6" /> 226w0496@zongolica.tecnm.mx
+        <SocialPill href="mailto:jesuspuertos.engineer@gmail.com">
+          <MailIcon class="size-4 md:size-6" /> jesuspuertos.engineer@gmail.com
         </SocialPill>
       </nav>
 
@@ -95,19 +101,28 @@ const i18n = getI18N({ currentLocale });
         <Tecnologies>
           <JavaScriptIcon class="size-4 md:size-6" /> JavaScript
         </Tecnologies>
-        <Tecnologies><PHPIcon class="size-4 md:size-6" /> PHP</Tecnologies>
+        <Tecnologies>
+          <TypeScriptIcon class="size-4 md:size-6" /> TypeScript
+        </Tecnologies>
         <Tecnologies><ReactIcon class="size-4 md:size-6" /> React</Tecnologies>
+        <Tecnologies><AstroIcon class="size-4 md:size-6" /> Astro</Tecnologies>
         <Tecnologies>
           <TailwindIcon class="size-4 md:size-6" /> Tailwind CSS
         </Tecnologies>
-        <Tecnologies><SassIcon class="size-4 md:size-6" /> Sass</Tecnologies>
         <Tecnologies><GitIcon class="size-4 md:size-6" /> Git</Tecnologies>
         <Tecnologies>
-          <WordpressIcon class="size-4 md:size-6" /> Wordpress
-        </Tecnologies>
-
-        <Tecnologies>
           <MySQLIcon class="size-4 md:size-6" /> MySQL
+        </Tecnologies>
+        <Tecnologies>
+          <SupabaseIcon class="size-4 md:size-6" /> Supabase
+        </Tecnologies>
+      </div>
+      <div class="flex flex-wrap gap-y-2 gap-x-3 mt-3">
+        <span class="text-xs text-black/40 dark:text-white/40 self-center">También:</span>
+        <Tecnologies><PHPIcon class="size-3 md:size-4" /> PHP</Tecnologies>
+        <Tecnologies><SassIcon class="size-3 md:size-4" /> Sass</Tecnologies>
+        <Tecnologies>
+          <WordpressIcon class="size-3 md:size-4" /> WordPress
         </Tecnologies>
       </div>
     </SectionContainer>
@@ -147,7 +162,7 @@ const i18n = getI18N({ currentLocale });
     </SectionContainer>
     <Bento />
     <SectionContainer id="contacto" data-section="contacto">
-      <FormContact <main SectionContainer />
+      <FormContact />
     </SectionContainer>
   </main>
 </Layout>

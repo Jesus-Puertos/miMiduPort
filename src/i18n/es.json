@@ -1,54 +1,89 @@
 {
-  "SEO_TITLE": "Portfolio de Jesús-Puertos - Desarrollador Web y Programador Web",
-  "SEO_DESCRIPTION": "Contratame o ve mis proyectos",
+  "SEO_TITLE": "Portfolio de Jesús Puertos — Full Stack Developer | React, Astro, TypeScript",
+  "SEO_DESCRIPTION": "Full Stack Developer especializado en React, Astro y TypeScript. Proyectos reales en producción: turismo, portales institucionales y transparencia municipal.",
   "INTRO_TITLE": "Hola, soy Jesús Puertos",
-  "BADGE_TITLE": "Dev FullStack Jr.",
-  "año de experiencia": "1 año de experiencia.",
-  "Desarrollador Web": "Desarrollador Web.",
-  "Experiencia en lenguajes de programación como JavaScript y PHP.": "Experiencia en lenguajes de programación como JavaScript y PHP.",
-  "Manejo de arquitectura CSS BEM.": "Manejo de arquitectura CSS BEM.",
-  "INTRO_SUBTILE2": "Estoy comprometido con el aprendizaje continuo y la aplicación de mis conocimientos en",
-  "proyectos prácticos": "proyectos prácticos.",
+  "BADGE_TITLE": "Full Stack Developer",
+  "año de experiencia": "Full Stack Developer.",
+  "Desarrollador Web": "React, Astro y TypeScript.",
+  "Experiencia en lenguajes de programación como JavaScript y PHP.": "Plataformas web en producción.",
+  "Manejo de arquitectura CSS BEM.": "Turismo · Institucional · Transparencia.",
+  "INTRO_SUBTILE2": "Apasionado por el rendimiento, la escalabilidad y la",
+  "proyectos prácticos": "experiencia de usuario.",
   "Education": "Educación:",
   "EDUCACION": [
     {
-      "date": "Actualmente...",
-      "title": "Udemy",
-      "description": "Me mantengo en constante formación con cursos avanzados en desarrollo web y frameworks modernos, como <strong>Astro</strong> y <strong>React</strong>, fortaleciendo mis habilidades técnicas."
-    },
-    {
-      "date": "Actualmente...",
+      "date": "Agosto 2022 — Actualmente",
       "title": "TECNM Campus Zongolica",
-      "description": "Estudiante de <strong>Ingeniería en Sistemas Computacionales</strong>. He desarrollado soluciones como una plataforma integral para actividades complementarias y he participado en competencias tecnológicas, obteniendo reconocimientos destacados como el primer lugar en <em>HackaTECNM 2024</em>.",
+      "description": "Estudiante de <strong>Ingeniería en Sistemas Computacionales</strong> con promedio de 9.3. He desarrollado plataformas web en producción para turismo y transparencia municipal, y obtenido reconocimientos en competencias nacionales como <em>1er lugar regional HackaTECNM 2024</em> y <em>3er lugar nacional HackaTECNM 2025</em>.",
       "link": "https://www.tecnm.mx/"
     },
     {
-      "date": "2019-2022",
+      "date": "2016 — 2019",
       "title": "Centro Bachillerato Tecnológico Agropecuario No. 280",
-      "description": "Durante mi estancia en el <strong>Centro Bachillerato Tecnológico Agropecuario</strong>, adquirí conocimientos técnicos en <span>ofimática</span> y mantenimiento de hardware."
+      "description": "Formación como <strong>Técnico en Ofimática</strong>. Adquirí conocimientos en herramientas ofimáticas, administración de sistemas y soporte técnico con promedio de 9.0.",
+      "link": "http://cbta280.edu.mx/"
     }
   ],
-  "Experiencia":"Experiencia:",
+  "Experiencia": "Experiencia:",
   "EXPERIENCIA": [
-       {
-        "date": "18 de noviembre de 2024 - 22 de noviembre de 2024",
-        "title": "Participación en InnovaTECNM 2024 fase nacional en la categoría de Hackatec",
-        "description": "Participé en el evento de InnovaTECNM 2024 en la categoría de Hackatec, representando a la región de Veracruz en Colima. Desarrollé una aplicación innovadora para Volvo Group México S.A. de C.V. utilizando tecnologías de Realidad Aumentada (AR), enfocada en la visualización y manipulación de modelos 3D en un entorno interactivo.",
-        "highlights": [
-            "Diseño e implementación de una aplicación AR para la visualización, rotación y expansión de modelos 3D.",
-            "Integración de herramientas para medir distancias y analizar dimensiones de objetos en entornos inmersivos.",
-            "Uso de herramientas para separar componentes de modelos 3D y visualizarlos de forma independiente.",
-            "Colaboración en equipo para presentar una solución funcional y efectiva a los desafíos propuestos por Volvo.",
-            "Reconocimiento por la creatividad y aplicabilidad del proyecto en la industria automotriz."
-        ]
+    {
+      "date": "Enero 2026 — Actualmente",
+      "title": "Desarrollador Web · H. Ayuntamiento de Zongolica",
+      "description": "Desarrollo de plataformas digitales enfocadas en turismo, información institucional, transparencia y experiencias interactivas para ciudadanía y visitantes del municipio.",
+      "highlights": [
+        "Desarrollo del portal turístico con rutas dinámicas, atractivos, experiencias, eventos y planificación de visita",
+        "Desarrollo del portal institucional del H. Ayuntamiento de Zongolica",
+        "Participación en el portal de transparencia municipal para acceso a información pública",
+        "Optimización de UX para dispositivos móviles y entornos de alto tráfico",
+        "Sistema de votación en tiempo real para Reinas de la Feria 2026 con Supabase Realtime, Auth con Google, perfiles de candidatas y tabla de votos en vivo",
+        "Despliegue y gestión con Vercel y Cloudflare",
+        "Uso de IA (GPT, Claude, Gemini, NotebookLM) para acelerar desarrollo, debugging y documentación técnica"
+      ],
+      "link": "https://zongolica.gob.mx/"
     },
     {
-      "date": "24 de Septiembre de 2024 - 27 de Septiembre de 2024",
-      "title": "Participación en InnovaTECNM 2024 fase regional en la categoría de Hackatec",
-      "description":
-        "Participe en el evento de InnovaTECNM 2024 en la categoría de Hackatec, donde obtuve el primer lugar con mi equipo Siera Code. Desarrollamos BeelTraveler una plataforma de gestión de agencies de viajes, la cual fue desarrollada con tecnologías como Astro, React, Face Tec, Node.js, TypeForm, MySQL, y TailwindCSS. El proyecto fue presentado en la fase regional de InnovaTECNM 2024, donde <strong>obtuvimos el primer lugar y la oportunidad de participar en la fase nacional.<strong>",
+      "date": "Noviembre 2025",
+      "title": "Technical Lead & Documentador · Nexus, HackaTECNM 2025",
+      "description": "Coordinación técnica y estructuración de solución digital para polos de desarrollo económico en la fase nacional de HackaTECNM 2025, obteniendo <strong>tercer lugar nacional</strong>.",
+      "highlights": [
+        "Diseño de arquitectura del sistema Nexus",
+        "Documentación técnica completa del proyecto",
+        "Coordinación de equipo y definición de módulos clave",
+        "Tercer lugar nacional en HackaTECNM 2025"
+      ],
+      "link": "https://nexus-umber-eta.vercel.app/"
+    },
+    {
+      "date": "Junio 2025 — Diciembre 2025",
+      "title": "Asistente de Logística · Heineken CEDIS Tlilapan",
+      "description": "Participación en procesos logísticos y análisis operativo en entorno de alta demanda dentro de Logística Embotelladora del Sur S.A. de C.V.",
+      "highlights": [
+        "Optimización de rutas de entrega",
+        "Control y auditoría de inventarios",
+        "Análisis de datos para toma de decisiones",
+        "Trabajo bajo presión en operaciones en tiempo real"
+      ]
+    },
+    {
+      "date": "Noviembre 2024",
+      "title": "AR Developer · HackaTECNM 2024 Fase Nacional (Volvo)",
+      "description": "Desarrollo de aplicación de Realidad Aumentada para Volvo Group México en la fase nacional de InnovaTECNM 2024, representando a la región de Veracruz en Colima.",
+      "highlights": [
+        "Diseño e implementación de app AR para visualización, rotación y expansión de modelos 3D",
+        "Herramientas de medición de distancias y dimensiones en entornos inmersivos",
+        "Separación y visualización independiente de componentes 3D",
+        "Optimización de rendimiento en entorno AR"
+      ]
+    },
+    {
+      "date": "Septiembre 2024",
+      "title": "Full Stack Developer · HackaTECNM 2024 Fase Regional",
+      "description": "Desarrollo de <strong>BeelTraveler</strong>, plataforma para conectar agencias de turismo con clientes y guías locales. Obtuvimos el <strong>primer lugar regional</strong> y pasamos a la fase nacional.",
+      "highlights": [
+        "Plataforma desarrollada con Astro, React, Node.js, MySQL y TailwindCSS",
+        "Primer lugar en la fase regional de HackaTECNM 2024"
+      ],
       "link": "https://beeltraveler-repo-tecnm.vercel.app/"
     }
   ]
-
 }

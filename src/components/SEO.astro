@@ -1,0 +1,152 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  url?: string;
+  noindex?: boolean;
+}
+
+const {
+  title = 'Portfolio de Jesús Puertos — Full Stack Developer | React, Astro, TypeScript',
+  description = 'Full Stack Developer especializado en React, Astro y TypeScript. Proyectos reales en producción: turismo, portales institucionales y transparencia municipal.',
+  image = '/me.jpg',
+  url = 'https://jesuspuertos.com',
+  noindex = false,
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, url);
+const absoluteImage = new URL(image, url).href;
+
+const robotsContent = noindex
+  ? 'noindex, nofollow'
+  : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+
+const imageExt = image.split('.').pop()?.toLowerCase();
+const imageType =
+  imageExt === 'webp' ? 'image/webp'
+  : imageExt === 'png' ? 'image/png'
+  : 'image/jpeg';
+
+// --- Schema.org @graph ---
+const personId = `${url}/#person`;
+const websiteId = `${url}/#website`;
+const webPageId = `${canonicalURL.href}#webpage`;
+
+const graph = [
+  {
+    "@type": "Person",
+    "@id": personId,
+    "name": "Jesús Alberto Rodríguez Puertos",
+    "alternateName": "Jesús Puertos",
+    "jobTitle": "Full Stack Developer",
+    "description": description,
+    "url": url,
+    "image": {
+      "@type": "ImageObject",
+      "url": absoluteImage,
+      "width": 460,
+      "height": 460
+    },
+    "email": "jesuspuertos.engineer@gmail.com",
+    "nationality": { "@type": "Country", "name": "México" },
+    "knowsLanguage": [
+      { "@type": "Language", "name": "Spanish" },
+      { "@type": "Language", "name": "English" }
+    ],
+    "knowsAbout": ["React", "Astro", "TypeScript", "Tailwind CSS", "Node.js", "MySQL", "Supabase"],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Tecnológico Nacional de México, Campus Zongolica",
+      "url": "https://www.tecnm.mx/"
+    },
+    "worksFor": {
+      "@type": "GovernmentOffice",
+      "name": "H. Ayuntamiento de Zongolica",
+      "url": "https://zongolica.gob.mx"
+    },
+    "award": [
+      "Tercer lugar nacional HackaTECNM 2025",
+      "Primer lugar regional HackaTECNM 2024"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/jesus-puertos-mx/",
+      "https://github.com/Jesus-Puertos"
+    ]
+  },
+  {
+    "@type": "WebSite",
+    "@id": websiteId,
+    "name": "Portfolio de Jesús Puertos",
+    "url": url,
+    "description": description,
+    "inLanguage": ["es", "en"],
+    "author": { "@id": personId }
+  },
+  {
+    "@type": "ProfilePage",
+    "@id": webPageId,
+    "url": canonicalURL.href,
+    "name": title,
+    "description": description,
+    "isPartOf": { "@id": websiteId },
+    "about": { "@id": personId },
+    "inLanguage": "es",
+    "dateModified": new Date().toISOString().split('T')[0]
+  }
+];
+---
+
+<!-- Robots -->
+<meta name="robots" content={robotsContent} />
+<meta name="googlebot" content={robotsContent} />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+
+<!-- Theme -->
+<meta name="theme-color" content="#1a1a2e" />
+<meta name="color-scheme" content="light dark" />
+
+<!-- Canonical + hreflang -->
+{!noindex && <link rel="canonical" href={canonicalURL} />}
+{!noindex && <link rel="alternate" hreflang="es" href={canonicalURL} />}
+{!noindex && <link rel="alternate" hreflang="en" href={new URL('/en', url)} />}
+{!noindex && <link rel="alternate" hreflang="x-default" href={canonicalURL} />}
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={absoluteImage} />
+<meta property="og:image:secure_url" content={absoluteImage} />
+<meta property="og:image:width" content="460" />
+<meta property="og:image:height" content="460" />
+<meta property="og:image:alt" content="Foto de Jesús Puertos, Full Stack Developer" />
+<meta property="og:image:type" content={imageType} />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:site_name" content="Jesús Puertos · Portfolio" />
+<meta property="og:locale" content="es_MX" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="profile:first_name" content="Jesús Alberto" />
+<meta property="profile:last_name" content="Rodríguez Puertos" />
+<meta property="profile:username" content="jesus-puertos" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={absoluteImage} />
+<meta name="twitter:image:alt" content="Foto de Jesús Puertos, Full Stack Developer" />
+
+<!-- Mobile / PWA -->
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="Jesús Puertos" />
+<meta name="application-name" content="Jesús Puertos · Portfolio" />
+
+<!-- Schema.org @graph -->
+<script is:inline type="application/ld+json" set:html={JSON.stringify({ "@context": "https://schema.org", "@graph": graph })} />

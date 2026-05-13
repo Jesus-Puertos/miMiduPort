@@ -1,87 +1,59 @@
 ---
-import HTML from "../assets/icons/HTML.astro";
-import CSS from "../assets/icons/CSS.astro";
-import ProjectsImage from "./ProjectsImage.astro";
-import PHP from "../assets/icons/PHP.astro";
-import Sass from "../assets/icons/Sass.astro";
-import JavaScript from "../assets/icons/JavaScript.astro";
-import MySQL from "../assets/icons/MySQL.astro";
+import TypeScript from "../assets/icons/TypeScript.astro";
+import AstroIcon from "../assets/icons/Astro.astro";
+import TailwindIcon from "../assets/icons/Tailwind.astro";
+
 const TAGS = {
-  HTML: {
-    name: "HTML",
-    class: "bg-[#E34F26]/70 text-white",
-    icon: HTML,
-  },
-  CSS: {
-    name: "CSS",
-    class: "bg-[#003159] text-white",
-    icon: CSS,
-  },
-  PHP: {
-    name: "PHP",
-    class: "bg-[#777BB4]/30 text-white",
-    icon: PHP,
-  },
-  SASS: {
-    name: "Sass",
-    class: "bg-[#CD6799]/30 text-white",
-    icon: Sass,
-  },
-  JAVASCRIPT: {
-    name: "JavaScript",
-    class: "bg-[#F7DF1E] text-black",
-    icon: JavaScript,
-  },
-  MYSQL: {
-    name: "MySQL",
-    class: "bg-[#4479A1] text-white",
-    icon: MySQL,
-  },
+  TYPESCRIPT: { name: "TypeScript", class: "bg-[#3178C6] text-white", icon: TypeScript },
+  ASTRO: { name: "Astro", class: "bg-[#17191E] text-white", icon: AstroIcon },
+  TAILWIND: { name: "Tailwind CSS", class: "bg-[#06B6D4]/20 text-white", icon: TailwindIcon },
 };
 
-const PROJECTS = [
-  {
-    title: "Proyecto FullStack Complementarias -TECNM Campus Zongolica",
-    description:
-      "Desarrolle una plataforma integral para el registro de actividades complementarias de los estudiantes del Tecnológico Nacional de México, Campus Zongolica.",
-    parrafo:
-      "Esta plataforma abarca características como: páginas de acceso público, sistema de registro de usuarios, un panel de administración robusto, y medidas de seguridad avanzadas en formularios, entre otros aspectos. \n\nEl proyecto aunque no se encuentra en producción, se encuentra en una etapa avanzada de desarrollo.",
-    link: "#",
-    github: "#",
-    image: ProjectsImage,
-    tags: [
-      TAGS.PHP,
-      TAGS.SASS,
-      TAGS.JAVASCRIPT,
-      TAGS.HTML,
-      TAGS.CSS,
-      TAGS.MYSQL,
-    ],
-  },
-];
+const project = {
+  title: "Portal Institucional · H. Ayuntamiento de Zongolica",
+  description:
+    "Portal oficial del ayuntamiento para acceso a servicios municipales, información institucional, directorio, descargas y transparencia.",
+  highlights: [
+    "Sitio oficial institucional del municipio",
+    "Acceso a servicios, directorio y transparencia",
+    "Arquitectura orientada a información pública",
+    "Optimización para dispositivos móviles y alto tráfico",
+  ],
+  link: "https://zongolica.gob.mx/",
+  tags: [TAGS.ASTRO, TAGS.TYPESCRIPT, TAGS.TAILWIND],
+};
 ---
 
-{
-  PROJECTS.map(({ title, description, tags, parrafo }) => (
-    <article>
-      <h3 class="text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2">
-        {title}
-      </h3>
-      <p class="text-lg mb-4 text-pretty">{description}</p>
-      <p class="text-lg mb-4 text-pretty">{parrafo}</p>
-      <ul class="flex flex-wrap  gap-x-2 gap-y-1 flex-row mb-2">
-        {tags.map((tag) => (
-          <li>
-            <span
-              class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}
-            >
-              <tag.icon class="size-4" />
-              {tag.name}
-            </span>
-          </li>
-        ))}
-      </ul>
-      <ProjectsImage imageName="TECNMComplementarias" />
-    </article>
-  ))
-}
+<article>
+  <h3 class="text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2">
+    {project.title}
+  </h3>
+  <p class="text-lg mb-3 text-pretty">{project.description}</p>
+  <ul class="list-disc list-inside text-base mb-4 space-y-1 text-black/70 dark:text-white/70">
+    {project.highlights.map((h) => <li>{h}</li>)}
+  </ul>
+  <ul class="flex flex-wrap gap-x-2 gap-y-1 flex-row mb-4">
+    {project.tags.map((tag) => (
+      <li>
+        <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
+          <tag.icon class="size-4" />
+          {tag.name}
+        </span>
+      </li>
+    ))}
+  </ul>
+  <a
+    href={project.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline-flex items-center gap-x-2 rounded-full border border-black/20 dark:border-white/20 px-4 py-1.5 text-sm hover:bg-black/5 dark:hover:bg-white/10 transition"
+  >
+    Ver proyecto →
+  </a>
+  <img
+    src="/images/portal_ayuntamiento.png"
+    alt="Portal Institucional del H. Ayuntamiento de Zongolica"
+    class="mt-6 rounded-xl shadow-2xl w-full object-cover"
+    loading="lazy"
+  />
+</article>
